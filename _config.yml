@@ -29,7 +29,7 @@ repository     : "rhzhang-ustc/rhzhang-ustc.github.io"
 author:
   # Biographic information
   # avatar           : "profile.png"
-  avatar           : "undergrad_lives.jpg"
+  avatar           : "profile.png"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. student in Robotics at UIUC, advised by Prof. Wenzhen Yuan in the RoboTouch Lab. "
