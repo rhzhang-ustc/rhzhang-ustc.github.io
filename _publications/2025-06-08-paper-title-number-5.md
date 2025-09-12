@@ -1,13 +1,15 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing"
 collection: publications
-category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+category: manuscripts
+permalink: /publication/2025-03-01-pneugelsight
+excerpt: 'We introduce **PneuGelSight**, a pneumatic manipulator with integrated vision-based tactile sensing and proprioception. Our pipeline enables accurate optical and dynamic simulation, supporting zero-shot sim-to-real transfer for robust manipulation.'
+date: 2025-03-01
+venue: 'International Journal of Robotics Research (IJRR)'
+paperurl: 'https://arxiv.org/abs/2508.18443'   # replace with DOI or arXiv link
+citation: 'Ruohan Zhang, Uksang Yoo, Yichen Li, Arpit Argawal, Wenzhen Yuan. (2025). <i>PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing</i>. <i>International Journal of Robotics Research (IJRR)</i>.'
 ---
 
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
+We present **PneuGelSight**, a novel pneumatic soft robotic manipulator that embeds a camera for **high-resolution tactile sensing and proprioception**. To fully exploit the sensor’s capabilities, we develop an **optical–mechanical simulation pipeline** that models both light transport and soft-body dynamics, enabling **zero-shot transfer from simulation to real-world tasks**.  
+
+Our results show that PneuGelSight provides **robust, accurate, and easily deployable sensing** for soft robots, paving the way toward more capable and sensorized soft robotic systems.
