@@ -13,6 +13,35 @@
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
   </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const defaultAvatar = "{{ '/images/profile/profile.png' | relative_url }}";
+    const bonusAvatars = [
+      { src: "{{ '/images/profile/friday_night.jpg' | relative_url }}", label: "Friday Night Mode 🎉" },
+      { src: "{{ '/images/profile/iros.jpg' | relative_url }}", label: "ICRA/IROS Mode 🤖" },
+      { src: "{{ '/images/profile/leaving_home.jpg' | relative_url }}", label: "Leaving Home 😢" },
+      { src: "{{ '/images/profile/undergrad_lives.jpg' | relative_url }}", label: "Undergrad Throwback 🎓" },
+      { src: "{{ '/images/profile/working_late.jpg' | relative_url }}", label: "Working Late ☕" },
+      { src: "{{ '/images/profile/yoshi.jpg' | relative_url }}", label: "Dog Mode 🦖" }
+    ];
+
+    const avatar = document.querySelector(".author__avatar img");
+    const authorName = document.querySelector(".author__name");
+
+    if (avatar && authorName) {
+      if (Math.random() < 0.01) {
+        // 1% chance: pick a random bonus
+        const index = Math.floor(Math.random() * bonusAvatars.length);
+        avatar.src = bonusAvatars[index].src;
+        avatar.title = "🎉 You found a hidden avatar!";
+        authorName.textContent = authorName.textContent + " — " + bonusAvatars[index].label;
+      } else {
+        avatar.src = defaultAvatar;
+      }
+    }
+  });
+</script>
+
 
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
