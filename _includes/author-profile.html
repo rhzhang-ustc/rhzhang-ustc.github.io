@@ -14,51 +14,34 @@
     {% endif %}
   </div>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Default + alternates (paths must exist in your repo)
-    const defaultFavicon = "{{ '/images/icons/default.png' | relative_url }}";
-    const bonusFavicons = [
-      "{{ '/images/icons/friday_night.png' | relative_url }}",
-      "{{ '/images/icons/iros.png' | relative_url }}",
-      "{{ '/images/icons/leaving_home.png' | relative_url }}",
-      "{{ '/images/icons/undergrad_lives.png' | relative_url }}",
-      "{{ '/images/icons/working_late.png' | relative_url }}",
-      "{{ '/images/icons/yoshi.png' | relative_url }}"
+  document.addEventListener("DOMContentLoaded", function() {
+    // const defaultAvatar = "{{ '/images/profile/profile.png' | relative_url }}";
+    const defaultAvatar = "{{ '/images/profile/undergrad_lives.jpg' | relative_url }}";
+    const bonusAvatars = [
+      { src: "{{ '/images/profile/friday_night.jpg' | relative_url }}", label: "Friday Night Mode 🎉" },
+      { src: "{{ '/images/profile/iros.jpg' | relative_url }}", label: "ICRA/IROS Mode 🤖" },
+      { src: "{{ '/images/profile/leaving_home.jpg' | relative_url }}", label: "Leaving Home 😢" },
+      { src: "{{ '/images/profile/undergrad_lives.jpg' | relative_url }}", label: "Undergrad Throwback 🎓" },
+      { src: "{{ '/images/profile/working_late.jpg' | relative_url }}", label: "Working Late ☕" },
+      { src: "{{ '/images/profile/yoshi.jpg' | relative_url }}", label: "Dog Mode 🦖" }
     ];
 
-    // Helper: remove old icons and set a new one (with cache-busting)
-    function setFavicon(url) {
-      // Remove any existing icons
-      document.querySelectorAll("link[rel~='icon'], link[rel='shortcut icon'], link[rel='apple-touch-icon']").forEach(n => n.remove());
+    const avatar = document.querySelector(".author__avatar img");
+    const authorName = document.querySelector(".author__name");
 
-      // Cache-busting query (change the version string if you want to force everyone to refetch)
-      const bust = (url.indexOf('?') === -1 ? '?v=' : '&v=') + (window.__FAV_VER || '2');
-
-      // Standard favicon
-      const link = document.createElement('link');
-      link.rel = 'icon';
-      link.type = 'image/png';
-      link.href = url + bust;
-      document.head.appendChild(link);
-
-      // Optional: Apple touch icon (helps on iOS/Safari)
-      const apple = document.createElement('link');
-      apple.rel = 'apple-touch-icon';
-      apple.href = url + bust;
-      document.head.appendChild(apple);
-    }
-
-    // 1% chance to pick a bonus favicon
-    if (Math.random() < 1 && bonusFavicons.length) {
-      const pick = bonusFavicons[Math.floor(Math.random() * bonusFavicons.length)];
-      setFavicon(pick);
-      document.title = document.title + " 🎉"; // optional visual cue
-    } else {
-      setFavicon(defaultFavicon);
+    if (avatar && authorName) {
+      if (Math.random() < 0.01) {
+        // 1% chance: pick a random bonus
+        const index = Math.floor(Math.random() * bonusAvatars.length);
+        avatar.src = bonusAvatars[index].src + "?v=" + Date.now();
+        avatar.title = "🎉 You found a hidden avatar!";
+        authorName.textContent = authorName.textContent + " — " + bonusAvatars[index].label;
+      } else {
+        avatar.src = defaultAvatar;
+      }
     }
   });
 </script>
-
 
 
   <div class="author__content">
