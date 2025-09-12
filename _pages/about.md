@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-<!-- # 👋 Hi, I’m Ruohan Zhang 张若涵 -->
+# 👋 Hi, I’m Ruohan Zhang 张若涵
 
 I am a **Ph.D. student in Robotics** at the [University of Illinois Urbana–Champaign (UIUC)](https://illinois.edu/), advised by [Prof. Wenzhen Yuan](https://scholar.google.com/citations?user=SNqm6doAAAAJ&hl=en/) in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/).  
 
