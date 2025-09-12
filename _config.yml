@@ -7,16 +7,21 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+locale         : "en-US"
+site_theme     : "default"   # or "air" if you prefer that look
+title          : "Ruohan Zhang – PhD Student, Robotics @ UIUC | Tactile Sensing & Manipulation"
+title_separator: "-"
+name           : &name "Ruohan Zhang 张若涵"
+description    : &description "Robotics PhD @ UIUC — active perception, tactile sensing, robot learning"
+
+# ---- GitHub Pages settings (user site) ----
+url            : "https://rhzhang-ustc.github.io"   # must be your exact user site URL
+baseurl        : ""                                 # keep empty for user sites
+
+# This is used by site.github.* variables and some includes.
+# Set it to YOUR repo slug, not the template’s:
+repository     : "rhzhang-ustc/rhzhang-ustc.github.io"
+
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,13 +29,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Champaign, IL, USA"
+  employer         : "University of Illinois, Urbana-Champaign"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "rz21@illinois.edu" 
 
   # Academic websites
   academia         : # URL
