@@ -32,7 +32,7 @@ author:
   avatar           : "profile.png"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student in Robotics at UIUC, advised by Prof. Wenzhen Yuan in the RoboTouch Lab. "
+  bio              : "I focus on integrating tactile perception into robotic manipulation to achieve dexterous and adaptive control. I also design robotic end-effectors with high-resolution tactile sensors to enhance real-world manipulation. "
   location         : "Champaign, IL, USA"
   employer         : "University of Illinois, Urbana-Champaign"
   cv              : "/files/cv.pdf"
