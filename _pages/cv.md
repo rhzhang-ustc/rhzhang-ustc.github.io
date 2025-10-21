@@ -37,10 +37,17 @@ Active Perception · Tactile Sensing · Robot Learning · Control & Simulation
 
 Research Experience
 ======
+* **Active Touch Exploration for Manipulation with Reinforcement Learning** 
+RoboTouch Lab, UIUC · Aug. 2025 – Now
+  - Developing reinforcement learning policies for tactile exploration using IsaacLab.
+  - Integrating visuo-tactile feedback for physical property inference.
+  - Implementing a co-optimization approach that jointly refines perception, exploratory actions, and manipulation models for fine-grained control.
+
+
 * **Towards Scalable and Damageless Harvesting: A Sensorized Gripper with In-Hand Tactile Perception**  
   RoboTouch Lab, UIUC · Oct. 2024 – Aug. 2025  
   - Designed and fabricated compact optical-mechanical components enabling seamless integration of sensing and actuation.  
-  - Developed a ROS-based real-time control pipeline (25 Hz) with tactile algorithms for force prediction (R² = 0.95), slip detection (F1 = 0.69, ~110 ms early warning), and fruit softness estimation (94.6% accuracy).  
+  - Developed a ROS-based real-time control pipeline (25 Hz) with tactile algorithms for force prediction, slip detection, and fruit softness estimation.  
   - Integrated perception modules into a unified pipeline, achieving 100% grasp success with ±0.1 N force variation in agricultural trials.  
   - Work under review at *IEEE Robotics and Automation Letters (RAL)*.  
 
