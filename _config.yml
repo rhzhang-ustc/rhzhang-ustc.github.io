@@ -29,7 +29,7 @@ repository     : "rhzhang-ustc/rhzhang-ustc.github.io"
 author:
   # Biographic information
   # avatar           : "profile.png"
-  avatar           : "working_late_full.jpg"
+  avatar           : "formal.jpg"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
   bio              : "I focus on integrating tactile perception into robotic manipulation to achieve dexterous and adaptive control. I also design robotic end-effectors with high-resolution tactile sensors to enhance real-world manipulation. "
