@@ -15,10 +15,15 @@
   }
 
   a {
-    text-decoration: underline;
+    text-decoration: none;
+    color: var(--global-text-color);
+    opacity: 0.75;
+    transition: opacity 0.2s ease-in-out;
 
     &:hover {
       text-decoration: underline;
+      opacity: 1;
+      color: var(--global-link-color);
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -42,6 +47,19 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+
+  a {
+    color: var(--global-text-color);
+    opacity: 0.9;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      text-decoration: underline;
+      color: var(--global-link-color);
+    }
+  }
 
   a + a {
     opacity: 0.5;
@@ -77,10 +95,6 @@
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
-
-  .archive__item-title {
-    text-decoration: underline;
   }
 }
 
