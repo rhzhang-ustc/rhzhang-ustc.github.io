@@ -32,11 +32,12 @@ author:
   avatar           : "formal.jpg"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "I focus on integrating tactile perception into robotic manipulation to achieve dexterous and adaptive control. I also design robotic end-effectors with high-resolution tactile sensors to enhance real-world manipulation. "
+  bio              : "I focus on integrating tactile perception into robotic manipulation to achieve dexterous and adaptive control. I also design robotic end-effectors with tactile sensors to enhance real-world manipulation."
   location         : "Champaign, IL, USA"
   employer         : "University of Illinois, Urbana-Champaign"
   cv              : "/files/cv.pdf"
-  email            : "rz21@illinois.edu" 
+  email            : "rz21@illinois.edu"
+  phone            : "+1 (217) 974-9852"   # e.g. "+1 (217) 555-0123" 
 
   # Academic websites
   academia         : # URL
@@ -69,7 +70,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/ruohan-zhang-uiuc"
+  linkedin         : "ruohan-zhang-uiuc"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

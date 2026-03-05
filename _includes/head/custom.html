@@ -14,4 +14,113 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<style>
+  /* Base: readable width and typography */
+  .splash .page__content {
+    max-width: 42em;
+    line-height: 1.65;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .splash .page__content h1 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5em;
+  }
+  .splash .page__content h2 {
+    margin-top: 1.75em;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .splash .page__content ul {
+    margin: 0.5em 0 1em;
+  }
+
+  /* Link style: color only, underline on hover */
+  .page__content a {
+    color: var(--global-link-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .page__content a:hover {
+    color: var(--global-link-color-hover);
+    border-bottom-color: var(--global-link-color-hover);
+  }
+  .page__content a:visited {
+    color: var(--global-link-color-visited);
+  }
+  .page__content a:visited:hover {
+    color: var(--global-link-color-hover);
+    border-bottom-color: var(--global-link-color-hover);
+  }
+
+  /* Prevent horizontal scroll on all devices */
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #main {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Masthead: avoid overflow on small screens */
+  @media screen and (max-width: 599px) {
+    .masthead__menu-item--lg {
+      font-size: 0.875rem;
+      max-width: 60vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  /* Phones and narrow viewports (under 600px) */
+  @media screen and (max-width: 599px) {
+    #main {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .splash .page__content {
+      max-width: 100%;
+      font-size: 0.9375rem;
+    }
+    .splash .page__content h1 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+    .splash .page__content h2 {
+      font-size: 1.125rem;
+      margin-top: 1.25em;
+    }
+    .page__content a {
+      padding: 0.25em 0;
+      min-height: 2.5rem;
+      display: inline-block;
+    }
+  }
+
+  /* Tablets and medium (600px–767px) */
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    #main {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .splash .page__content {
+      max-width: 100%;
+    }
+  }
+
+  /* Large screens: keep constrained width for readability */
+  @media screen and (min-width: 768px) {
+    .splash .page__content {
+      max-width: 42em;
+    }
+  }
+</style>
+
 <!-- end custom head snippets -->
