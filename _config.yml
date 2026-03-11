@@ -12,7 +12,7 @@ site_theme     : "default"   # or "air" if you prefer that look
 title          : "Ruohan Zhang – PhD Student, Robotics @ UIUC"
 title_separator: "-"
 name           : &name "Ruohan Zhang 张若涵"
-description    : &description "Robotics PhD @ UIUC — active perception, tactile sensing, robot learning"
+description    : &description "Robotics PhD @ UIUC — tactile sensing, stable and generalizable manipulation"
 
 # ---- GitHub Pages settings (user site) ----
 url            : "https://rhzhang-ustc.github.io"   # must be your exact user site URL
@@ -32,7 +32,7 @@ author:
   avatar           : "formal.jpg"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "I focus on integrating tactile perception into robotic manipulation to achieve dexterous and adaptive control. I also design robotic end-effectors with tactile sensors to enhance real-world manipulation."
+  bio              : "My research lies at the intersection of robot perception, tactile sensing, and manipulation. I design tactile sensors and study their integration into robotic end-effectors, working towards stable and generalizable manipulation."
   location         : "Champaign, IL, USA"
   employer         : "University of Illinois, Urbana-Champaign"
   cv              : "/files/cv.pdf"
