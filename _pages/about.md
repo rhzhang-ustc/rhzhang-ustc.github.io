@@ -13,13 +13,13 @@ I am a **Ph.D. student in Robotics** at the [University of Illinois Urbana–Cha
 
 Before joining UIUC, I earned my **B.Sc. in Electronic Engineering and Information Science** at the University of Science and Technology of China (USTC), where I graduated with the **Guo Moruo Scholarship**, the highest honor for undergraduates at USTC (awarded to approximately one student per major).
 
-My research lies at the intersection of **robot perception, tactile sensing, and active manipulation**. I design and study tactile sensors and their integration into robotic end-effectors, with the goal of enabling robots to interact delicately and intelligently with the physical world.
+My research lies at the intersection of **robot perception, tactile sensing, and manipulation**. I believe tactile perception is a powerful way to understand the physical world—from object properties to contact dynamics—and I am working towards **stable and generalizable manipulation** for robotics. I design and study tactile sensors and their integration into robotic end-effectors, with the goal of enabling robots to interact delicately and intelligently with their environment.
 
 ## Research Interests
 
-- Active perception and contact-rich manipulation  
-- Tactile sensing and perception  
-- Physics-based control and embodied intelligence  
+- Tactile sensing and perception for understanding the physical world  
+- Stable and generalizable robotic manipulation  
+- Contact-rich interaction and active perception  
 
 ## Selected Publications
 
