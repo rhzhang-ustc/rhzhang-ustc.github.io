@@ -21,13 +21,6 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 - Stable and generalizable robotic manipulation  
 - Contact-rich interaction and active perception  
 
-## Selected Publications
-
-**PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing**  
-*Ruohan Zhang, Uksang Yoo, Yichen Li, Arpit Argawal, Wenzhen Yuan*  
-*International Journal of Robotics Research (IJRR), 2025*  
-[Read paper](https://arxiv.org/abs/2508.18443)
-
 ## Education
 
 - **Ph.D. in Electrical & Computer Engineering** (2023–present)  
