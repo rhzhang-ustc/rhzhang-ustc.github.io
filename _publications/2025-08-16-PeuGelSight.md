@@ -4,6 +4,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/pneugelsight/
 redirect_to: 'https://rhzhang-ustc.github.io/PneuGelSight-project/'
+header:
+  teaser: pneugelsight_teaser.png
 excerpt: 'We introduce **PneuGelSight**, a pneumatic manipulator with integrated vision-based tactile sensing and proprioception. Our pipeline enables accurate optical and dynamic simulation, supporting zero-shot sim-to-real transfer for robust manipulation.'
 date: 2025-08-16
 venue: 'International Journal of Robotics Research (IJRR)'

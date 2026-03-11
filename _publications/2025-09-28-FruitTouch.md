@@ -4,6 +4,8 @@ collection: publications
 category: manuscripts
 permalink: /publication/fruittouch/
 redirect_to: 'https://fruittouch-dev.github.io/fruittouch/'
+header:
+  teaser: fruittouch_teaser.png
 excerpt: 'We propose **FruitTouch**, a compact gripper that integrates high-resolution, vision-based tactile sensing to enable gentle, scalable fruit harvesting with real-time force, slip, and softness estimation.'
 date: 2025-09-28   # (To be set once accepted / published)
 venue: 'Under Review (2025)'
