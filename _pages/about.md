@@ -28,11 +28,9 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 
 ## Contact
 
-- **Email:** [rz21@illinois.edu](mailto:rz21@illinois.edu)  
-{% if site.author.phone %}
-- **Phone:** [{{ site.author.phone }}](tel:{{ site.author.phone }})  
-{% endif %}
-- **GitHub:** [rhzhang-ustc](https://github.com/rhzhang-ustc)  
+- **Email:** [rz21@illinois.edu](mailto:rz21@illinois.edu)
+- **Phone:** [+1 (217) 974-9852](tel:+12179749852)
+- **GitHub:** [rhzhang-ustc](https://github.com/rhzhang-ustc)
 - **LinkedIn:** [Ruohan Zhang](https://www.linkedin.com/in/ruohan-zhang-uiuc)
 
 ---
