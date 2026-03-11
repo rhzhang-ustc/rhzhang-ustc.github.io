@@ -11,8 +11,6 @@ redirect_from:
 
 I am a **Ph.D. student in Robotics** at the [University of Illinois Urbana–Champaign (UIUC)](https://illinois.edu/), advised by [Prof. Wenzhen Yuan](https://scholar.google.com/citations?user=SNqm6doAAAAJ&hl=en/) in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/).
 
-Before joining UIUC, I earned my **B.Sc. in Electronic Engineering and Information Science** at the University of Science and Technology of China (USTC), where I graduated with the **Guo Moruo Scholarship**, the highest honor for undergraduates at USTC (awarded to approximately one student per major).
-
 My research lies at the intersection of **robot perception, tactile sensing, and manipulation**. I believe tactile perception is a powerful way to understand the physical world—from object properties to contact dynamics—and I am working towards **stable and generalizable manipulation** for robotics. I design and study tactile sensors and their integration into robotic end-effectors, with the goal of enabling robots to interact delicately and intelligently with their environment.
 
 ## Research Interests
@@ -26,7 +24,7 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 - **Ph.D. in Electrical & Computer Engineering** (2023–present)  
   University of Illinois Urbana–Champaign (UIUC)  
 - **B.Sc. in Electronic Engineering and Information Science** (2019–2023)  
-  University of Science and Technology of China (USTC)
+  University of Science and Technology of China (USTC) — Guo Moruo Scholarship (highest honor for undergraduates, ~one per major)
 
 ## Contact
 
