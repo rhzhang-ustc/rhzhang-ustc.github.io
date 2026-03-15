@@ -37,7 +37,7 @@ author:
   employer         : "University of Illinois, Urbana-Champaign"
   cv              : "/files/cv.pdf"
   email            : "rz21@illinois.edu"
-  phone            : "+1 (217) 974-9852"   # e.g. "+1 (217) 555-0123" 
+  # phone            :   # Leave empty to hide from site 
 
   # Academic websites
   academia         : # URL
