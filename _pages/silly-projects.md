@@ -6,6 +6,18 @@ author_profile: true
 
 Small, silly things built for fun.
 
+## [What Will They Publish Next?](https://rhzhang-ustc.github.io/WhatWillTheyPublishNext/)
+
+<div class="project-preview-row">
+  <div class="project-preview-teaser">
+    <img src="/images/whatwilltheypublishnext_preview.png" alt="What Will They Publish Next?">
+  </div>
+  <div class="project-preview-body">
+    <p>A toy that guesses what a researcher might publish next, based on their recent work.</p>
+    <p><a href="https://rhzhang-ustc.github.io/WhatWillTheyPublishNext/">Try it →</a></p>
+  </div>
+</div>
+
 ## [Slipland](https://rhzhang-ustc.github.io/slipland/)
 
 <div class="project-preview-row">
