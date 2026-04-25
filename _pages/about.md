@@ -11,7 +11,7 @@ redirect_from:
 
 I am a **Ph.D. student in Robotics** at the [University of Illinois Urbana–Champaign (UIUC)](https://illinois.edu/), advised by [Prof. Wenzhen Yuan](https://scholar.google.com/citations?user=SNqm6doAAAAJ&hl=en/) in the [RoboTouch Lab](https://robotouchlab.web.illinois.edu/).
 
-My research lies at the intersection of **robot perception, tactile sensing, and manipulation**. I believe tactile perception is a powerful way to understand the physical world—from object properties to contact dynamics—and I am working towards **stable and generalizable manipulation** for robotics. I design and study tactile sensors and their integration into robotic end-effectors, with the goal of enabling robots to interact delicately and intelligently with their environment.
+My research lies at the intersection of **robot perception, tactile sensing, and manipulation**. I believe tactile perception is a powerful way to understand the physical world—from object properties to contact dynamics—and I am working towards **stable and generalizable manipulation** for robotics. I design and study tactile sensors and their integration into robotic end-effectors, with the goal of enabling robots to interact delicately and intelligently with their environment[.](/silly-projects/)
 
 ## Research Interests
 
