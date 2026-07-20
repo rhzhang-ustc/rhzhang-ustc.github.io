@@ -32,9 +32,7 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 - **GitHub:** [rhzhang-ustc](https://github.com/rhzhang-ustc)
 - **LinkedIn:** [Ruohan Zhang](https://www.linkedin.com/in/ruohan-zhang-uiuc)
 
-## Visitors
-
-<div style="max-width: 100%; overflow: hidden; text-align: center;">
+<div hidden aria-hidden="true">
   <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=iFgJmiNKvpBKIMrzuqe3WfNgPfyDP-u1tSu1cZZntZU&amp;cl=ffffff&amp;w=a"></script>
 </div>
 
