@@ -175,6 +175,13 @@
           </a>
         </li>
       {% endif %}
+      {% if author.visitor_map %}
+        <li>
+          <a href="{{ author.visitor_map }}" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-fw fa-earth-americas icon-pad-right" aria-hidden="true"></i>Visitor Map
+          </a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </div>
