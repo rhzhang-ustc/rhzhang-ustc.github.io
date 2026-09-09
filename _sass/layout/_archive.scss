@@ -93,7 +93,7 @@
 }
 
 .archive__item:hover {
-  .archive__item-teaser {
+  .archive__item-teaser:not(.archive__item-teaser--empty) {
     box-shadow: 0 0 10px rgba(#000, 0.25);
   }
 }
@@ -140,17 +140,23 @@
 
     .archive__item-teaser--left {
       flex-shrink: 0;
-      width: 160px;
-      max-width: 160px;
-      max-height: 120px;
+      width: 200px;
+      max-width: 200px;
       margin-bottom: 0;
       margin-right: 0.5em;
 
+      /* paper figures, not photos: show the whole frame rather than cropping */
       img {
+        display: block;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
+        object-fit: contain;
       }
+    }
+
+    /* keeps rows aligned when a publication has no teaser */
+    .archive__item-teaser--empty {
+      box-shadow: none;
     }
 
     .archive__item-body {

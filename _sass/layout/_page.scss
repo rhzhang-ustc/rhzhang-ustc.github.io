@@ -85,6 +85,16 @@
   }
 }
 
+/* Publication detail: teaser figure, constrained so it doesn't swamp the page */
+.pub-figure {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin: 1.25em auto 1.5em;
+  border-radius: 4px;
+}
+
 /* Publication list (homepage) */
 .pub-list {
   margin: 1.25em 0 2em;

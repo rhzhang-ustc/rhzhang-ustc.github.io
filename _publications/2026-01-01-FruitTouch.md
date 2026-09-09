@@ -22,7 +22,7 @@ Accepted; to appear.
 
 [Project Page](https://fruittouch-dev.github.io/fruittouch/){: .btn .btn--primary}
 
-![FruitTouch teaser](/images/fruittouch_teaser.png)
+![FruitTouch teaser](/images/fruittouch_teaser.png){: .pub-figure}
 
 ## Abstract
 

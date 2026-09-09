@@ -1,4 +1,4 @@
-{% include base_path %}
+x{% include base_path %}
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
@@ -12,10 +12,11 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item {% if post.collection == 'publications' and teaser %}archive__item--with-teaser{% endif %}">
+<div class="{{ include.type | default: "list" }}__item {% if post.collection == 'publications' %}archive__item--with-teaser{% endif %}">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if teaser and post.collection == "publications" %}
-      <div class="archive__item-teaser archive__item-teaser--left">
+    {% if post.collection == "publications" %}
+      <div class="archive__item-teaser archive__item-teaser--left{% unless teaser %} archive__item-teaser--empty{% endunless %}">
+        {% if teaser %}
         <img src=
           {% if teaser contains "://" %}
             "{{ teaser }}"
@@ -23,6 +24,7 @@
             "{{ teaser | prepend: "/images/" | prepend: base_path }}"
           {% endif %}
           alt="">
+        {% endif %}
       </div>
     {% elsif teaser and include.type == "grid" %}
       <div class="archive__item-teaser">

@@ -8,6 +8,9 @@
 #       source of truth to keep in sync.
 
 main:
+  - title: "Home"
+    url: /
+
   - title: "Publications"
     url: /publications/
 

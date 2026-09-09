@@ -23,7 +23,7 @@ citation: 'Ruohan Zhang, Uksang Yoo, Yichen Li, Arpit Agarwal, Wenzhen Yuan. (20
 
 [Project Page](https://rhzhang-ustc.github.io/PneuGelSight-project/){: .btn .btn--primary} [arXiv:2508.18443](https://arxiv.org/abs/2508.18443){: .btn .btn--primary} [PDF](https://arxiv.org/pdf/2508.18443){: .btn .btn--primary}
 
-![PneuGelSight teaser](/images/pneugelsight_teaser.png)
+![PneuGelSight teaser](/images/pneugelsight_teaser.png){: .pub-figure}
 
 ## Abstract
 
