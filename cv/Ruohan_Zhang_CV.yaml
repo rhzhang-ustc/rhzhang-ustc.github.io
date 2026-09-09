@@ -1,0 +1,169 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Ruohan Zhang
+  email: rz21@illinois.edu
+  custom_connections:
+    - fontawesome_icon: link
+      placeholder: ''
+      url: https://rhzhang-ustc.github.io/
+    - fontawesome_icon: graduation-cap
+      placeholder: ''
+      url: https://scholar.google.com/citations?user=4hwZIh0AAAAJ
+    - fontawesome_icon: orcid
+      placeholder: ''
+      url: https://orcid.org/0009-0006-1999-2806
+    - fontawesome_icon: linkedin
+      placeholder: ''
+      url: https://www.linkedin.com/in/ruohan-zhang-uiuc
+    - fontawesome_icon: github
+      placeholder: ''
+      url: https://github.com/rhzhang-ustc
+  sections:
+    Education:
+      - institution: University of Illinois Urbana-Champaign
+        area: Electrical and Computer Engineering
+        degree: Ph.D.
+        location: IL, US
+        start_date: 2023-09
+        end_date: present
+        summary: |-
+          Advisor: Wenzhen Yuan
+
+          **M.S.** in Electrical and Computer Engineering, May 2025
+      - institution: University of Science and Technology of China
+        area: Electronic Engineering and Information Science
+        degree: B.Sc.
+        location: Hefei, China
+        start_date: 2019-09
+        end_date: 2023-06
+        summary: 'GPA: 4.05/4.30; Rank: 1/96; Advisor: Chong Luo'
+
+    Publications:
+      - bullet: '**Zhang, R.**, Mirzaee, M. A., Yuan, W. "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting," *IEEE Robotics and Automation Letters (RA-L), 2026* [[Webpage](https://fruittouch-dev.github.io/fruittouch/)]'
+      - bullet: 'Crowder, D., **Zhang, R.**, Block, A. E., Yuan, W. "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction," *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026* [[arXiv](https://arxiv.org/abs/2607.11690)]'
+      - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *Sage, The International Journal of Robotics Research (IJRR), 2025* [[Webpage](https://rhzhang-ustc.github.io/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'
+
+    Academic Services:
+      - label: Reviewer
+        details: '**Journals**: IJRR, RA-L, T-RL; **Conferences**: ICRA, IROS'
+      - label: Teaching Assistant
+        details: 'ECE 205 (Spring 2025), ECE 206 (Fall 2025), UIUC'
+
+    Research Experience:
+      - company: RoboTouch Lab, UIUC, IL, US
+        position: ''
+        start_date: 2023-09
+        end_date: present
+        summary: 'Director: Wenzhen Yuan, Associate Professor, CS'
+        highlights:
+          - '**Active touch exploration for manipulation with reinforcement learning.**'
+          - Developing reinforcement learning policies for tactile exploration using Isaac Lab; integrating visuo-tactile feedback for physical property inference; co-optimizing perception, exploratory actions, and manipulation models for fine-grained control.
+          - '**Sensorized gripper with in-hand tactile perception for scalable, damageless harvesting.**'
+          - Compact optical-mechanical design with an optimized optical path, accommodating a wide range of fruit sizes; ROS-based real-time pipeline for force estimation, slip detection, and softness prediction, validated in real-world cherry tomato harvesting.
+          - '**Vision-based proprioception and tactile sensing for soft robotics.**'
+          - Embedded-camera pipeline for proprioception and tactile sensing via photometric stereo and deep learning; 5.35 mm mean Chamfer distance for shape reconstruction (down from 8.85 mm) and sub-0.2 mm depth error for surface texture, with inference under 0.05 s.
+          - '**Haptic glove for VR-based social touch data collection.**'
+          - Designed and built a wearable haptic feedback glove for a VR-based platform used to capture whole-body social touch interaction between humans and robots.
+      - company: Intelligent Multimedia Lab, MSRA, Beijing, China
+        position: ''
+        start_date: 2022-09
+        end_date: 2023-07
+        summary: 'Director: Chong Luo, Principal Researcher'
+        highlights:
+          - '**Generative AI for video processing and object tracking.**'
+          - Developed a diffusion-model-based object tracking pipeline under heavy occlusion, reaching state of the art at the time; improved computational speed and memory usage for large-scale datasets.
+    Projects:
+      - name: Design and Innovation of a Quadrotor UAV
+        start_date: 2021-03
+        end_date: 2021-07
+        summary: 'Course project, EEIS, USTC; advised by Wei Lu'
+        highlights:
+          - Built a quadrotor from scratch achieving stable hovering within ±3 cm drift.
+          - Designed logic control circuits and power management systems, and optimized flight algorithms.
+
+    Honors and Awards:
+      - bullet: '**Guo Moruo Scholarship**, 2023 — highest honor for undergraduates at USTC (top 1%).'
+      - bullet: '**China National Scholarship**, 2021 and 2022.'
+      - bullet: '**USTC Talented Students Program Scholarship**, 2020, 2021, and 2022.'
+
+    Technical Skills:
+      - label: Programming
+        details: Python, C++, C, MATLAB, LaTeX, embedded systems
+      - label: Robotics
+        details: ROS, MuJoCo, Isaac Lab, PyTorch
+      - label: Simulation & CAD
+        details: Blender, Abaqus, COMSOL, SOFA, SolidWorks, Onshape, Fusion 360, Altium Designer
+      - label: Languages
+        details: Chinese (native), English (professional working proficiency)
+
+design:
+  theme: engineeringclassic
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.55in
+    left_margin: 0.65in
+    right_margin: 0.65in
+    show_top_note: false
+    show_footer: false
+  colors:
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    links: rgb(255, 0, 0)
+  typography:
+    line_spacing: 0.5em
+    alignment: justified
+    font_family:
+      body: Charter
+      name: Charter
+      headline: Charter
+      connections: Charter
+      section_titles: Charter
+    font_size:
+      body: 10pt
+      name: 22pt
+      headline: 9.5pt
+      connections: 9.5pt
+      section_titles: 1.2em
+    bold:
+      section_titles: true
+  header:
+    alignment: center
+    space_below_name: 0.15cm
+    space_below_headline: 0.15cm
+    space_below_connections: 0.2cm
+    connections:
+      space_between_connections: 0.45cm
+  section_titles:
+    type: with_full_line
+    line_thickness: 0.5pt
+    space_above: 0.38cm
+    space_below: 0.22cm
+  sections:
+    space_between_regular_entries: 0.9em
+    space_between_text_based_entries: 0.2em
+  entries:
+    date_and_location_width: 3.6cm
+    highlights:
+      bullet: "-"
+      space_above: 0.12cm
+      space_between_items: 0.12cm
+  templates:
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, LOCATION
+        **DEGREE** in AREA; SUMMARY
+      date_and_location_column: DATE
+    experience_entry:
+      main_column: |-
+        **COMPANY**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
+    normal_entry:
+      main_column: |-
+        **NAME**
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE

@@ -1,0 +1,80 @@
+{% comment %}
+  JSON-LD structured data.
+  Emits a schema.org Person on the homepage and a ScholarlyArticle on each
+  publication page, so search engines and AI crawlers get an unambiguous
+  machine-readable entity record (important: "Ruohan Zhang" is a common name).
+  Values come from site.author and site.structured_data in _config.yml.
+{% endcomment %}
+{% assign a = site.author %}
+{% assign sd = site.structured_data %}
+{% assign site_url = site.url | append: site.baseurl %}
+
+{% if page.url == "/" %}
+  {% capture sameas_raw %}{% if a.googlescholar %}{{ a.googlescholar }}|{% endif %}{% if a.orcid %}{{ a.orcid }}|{% endif %}{% if a.semantic %}{{ a.semantic }}|{% endif %}{% if a.arxiv %}{{ a.arxiv }}|{% endif %}{% if a.researchgate %}{{ a.researchgate }}|{% endif %}{% if a.github %}https://github.com/{{ a.github }}|{% endif %}{% if a.linkedin %}https://www.linkedin.com/in/{{ a.linkedin }}|{% endif %}{% endcapture %}
+  {% assign sameas = sameas_raw | split: "|" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ site_url | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ site_url | append: "/#person" | jsonify }},
+    "name": {{ a.name | jsonify }},
+    {% if sd.alternate_name %}"alternateName": {{ sd.alternate_name | jsonify }},{% endif %}
+    {% if sd.given_name %}"givenName": {{ sd.given_name | jsonify }},{% endif %}
+    {% if sd.family_name %}"familyName": {{ sd.family_name | jsonify }},{% endif %}
+    {% if sd.job_title %}"jobTitle": {{ sd.job_title | jsonify }},{% endif %}
+    "description": {{ a.bio | jsonify }},
+    "url": {{ site_url | jsonify }},
+    {% if a.email %}"email": {{ a.email | prepend: "mailto:" | jsonify }},{% endif %}
+    {% if a.avatar %}"image": {{ a.avatar | prepend: "/images/" | prepend: site_url | jsonify }},{% endif %}
+    {% if a.location %}"homeLocation": { "@type": "Place", "name": {{ a.location | jsonify }} },{% endif %}
+    {% if sd.affiliation %}
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": {{ sd.affiliation | jsonify }}{% if sd.affiliation_url %},
+      "url": {{ sd.affiliation_url | jsonify }}{% endif %}
+    },{% endif %}
+    {% if sd.department %}
+    "memberOf": {
+      "@type": "ResearchOrganization",
+      "name": {{ sd.department | jsonify }}{% if sd.department_url %},
+      "url": {{ sd.department_url | jsonify }}{% endif %}
+    },{% endif %}
+    {% if sd.alumni_of %}
+    "alumniOf": [
+      {% if sd.affiliation %}{ "@type": "CollegeOrUniversity", "name": {{ sd.affiliation | jsonify }} },{% endif %}
+      { "@type": "CollegeOrUniversity", "name": {{ sd.alumni_of | jsonify }}{% if sd.alumni_of_url %}, "url": {{ sd.alumni_of_url | jsonify }}{% endif %} }
+    ],{% endif %}
+    {% if sd.knows_about %}"knowsAbout": {{ sd.knows_about | jsonify }},{% endif %}
+    "sameAs": [{% for s in sameas %}{{ s | strip | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+  }
+}
+</script>
+{% endif %}
+
+{% if page.collection == "publications" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ page.title | jsonify }},
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | prepend: site_url | jsonify }},
+  {% if page.authors %}
+  "author": [{% for person in page.authors %}
+    { "@type": "Person", "name": {{ person | jsonify }}{% if person == a.name %}, "@id": {{ site_url | append: "/#person" | jsonify }}{% endif %} }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ],{% endif %}
+  {% if page.date %}"datePublished": {{ page.date | date: "%Y-%m-%d" | jsonify }},{% endif %}
+  {% if page.venue %}{% if page.category == "conferences" %}"isPartOf": { "@type": "CreativeWork", "name": {{ page.venue | jsonify }} },{% else %}"publication": { "@type": "Periodical", "name": {{ page.venue | jsonify }} },{% endif %}{% endif %}
+  {% if page.excerpt %}"abstract": {{ page.excerpt | markdownify | strip_html | strip_newlines | strip | jsonify }},{% endif %}
+  {% if page.header.teaser %}"image": {{ page.header.teaser | prepend: "/images/" | prepend: site_url | jsonify }},{% endif %}
+  {% capture pub_sameas %}{% if page.paperurl %}{{ page.paperurl }}|{% endif %}{% if page.projecturl %}{{ page.projecturl }}|{% endif %}{% endcapture %}
+  {% assign pub_links = pub_sameas | split: "|" %}
+  {% if pub_links.size > 0 %}"sameAs": [{% for l in pub_links %}{{ l | strip | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}],{% endif %}
+  "isAccessibleForFree": true,
+  "inLanguage": "en"
+}
+</script>
+{% endif %}

@@ -85,6 +85,75 @@
   }
 }
 
+/* Publication list (homepage) */
+.pub-list {
+  margin: 1.25em 0 2em;
+}
+
+.pub-item {
+  margin-bottom: 1.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pub-title {
+  margin: 0 0 0.2em;
+  font-size: 1em;
+  line-height: 1.35;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.pub-authors {
+  margin: 0 0 0.15em !important;
+  font-size: 0.9em;
+  line-height: 1.4;
+  text-indent: 0 !important;
+}
+
+.pub-me {
+  font-weight: 700;
+}
+
+.pub-venue {
+  margin: 0 0 0.4em !important;
+  font-size: 0.85em;
+  line-height: 1.4;
+  font-style: italic;
+  opacity: 0.8;
+  text-indent: 0 !important;
+}
+
+.pub-links {
+  margin: 0 !important;
+  font-size: 0.8em;
+  text-indent: 0 !important;
+
+  a {
+    display: inline-block;
+    margin-right: 0.4em;
+    padding: 0.15em 0.6em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 999px;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: currentColor;
+      text-decoration: none;
+    }
+  }
+}
+
 .page__content {
 
   h2 {

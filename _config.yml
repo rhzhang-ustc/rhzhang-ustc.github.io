@@ -40,13 +40,16 @@ author:
   # phone            :   # Leave empty to hide from site 
 
   # Academic websites
+  # These are the identity anchors that let search engines and AI models tell
+  # you apart from other researchers named "Ruohan Zhang". They render as
+  # sidebar links AND as schema.org "sameAs" in the JSON-LD structured data.
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : 
+  arxiv            : # URL e.g. https://arxiv.org/a/zhang_r_1
+  googlescholar    : "https://scholar.google.com/citations?user=4hwZIh0AAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # "http://orcid.org/yourorcidurl"
-  semantic         : # URL
+  orcid            : "https://orcid.org/0009-0006-1999-2806"
+  semantic         : # URL e.g. https://www.semanticscholar.org/author/XXXXXXX
   pubmed           : 
   researchgate     : # URL
   scopus           : # URL
@@ -86,6 +89,28 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+
+# Structured data (schema.org JSON-LD) emitted by _includes/structured-data.html
+# This gives search engines and AI crawlers an unambiguous entity record.
+structured_data:
+  alternate_name   : "张若涵"
+  given_name       : "Ruohan"
+  family_name      : "Zhang"
+  job_title        : "Ph.D. Student in Robotics"
+  affiliation      : "University of Illinois Urbana-Champaign"
+  affiliation_url  : "https://illinois.edu/"
+  department       : "RoboTouch Lab, Department of Electrical and Computer Engineering"
+  department_url   : "https://robotouchlab.web.illinois.edu/"
+  alumni_of        : "University of Science and Technology of China"
+  alumni_of_url    : "https://en.ustc.edu.cn/"
+  knows_about:
+    - "Robotics"
+    - "Tactile sensing"
+    - "Vision-based tactile sensors"
+    - "Robot perception"
+    - "Robotic manipulation"
+    - "Contact-rich manipulation"
+    - "Soft robotics"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -148,8 +173,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "og-card.png"  # 1200x630 link-preview image in /images/
+og_description           : "Ruohan Zhang is a Robotics Ph.D. student at the University of Illinois Urbana-Champaign, working on tactile sensing, robot perception, and stable, generalizable manipulation."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -171,6 +196,19 @@ include:
   - _pages
   - files
 exclude:
+  # Repo scaffolding and source tooling - keep it out of the published site so
+  # crawlers only see real content.
+  - .devcontainer
+  - CONTRIBUTING.md
+  - docker-compose.yaml
+  - _config_docker.yml
+  - markdown_generator
+  - scripts
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
+  - RuohanZhang_CV.docx   # CV is published as files/cv.pdf only
+  - cv                    # RenderCV source; the rendered PDF lives at files/cv.pdf
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
