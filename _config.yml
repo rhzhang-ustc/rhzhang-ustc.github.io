@@ -32,7 +32,7 @@ author:
   avatar           : "formal.jpg"
   name             : "Ruohan Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "My research lies at the intersection of robot perception, tactile sensing, and manipulation. I design tactile sensors and study their integration into robotic end-effectors, working towards stable and generalizable manipulation."
+  bio              : "Tactile sensing and perception for stable, generalizable robotic manipulation."
   location         : "Champaign, IL, USA"
   employer         : "University of Illinois, Urbana-Champaign"
   cv              : "/files/cv.pdf"
@@ -93,6 +93,7 @@ author:
 # Structured data (schema.org JSON-LD) emitted by _includes/structured-data.html
 # This gives search engines and AI crawlers an unambiguous entity record.
 structured_data:
+  description      : "My research lies at the intersection of robot perception, tactile sensing, and manipulation. I design tactile sensors and study their integration into robotic end-effectors, working towards stable and generalizable manipulation."
   alternate_name   : "张若涵"
   given_name       : "Ruohan"
   family_name      : "Zhang"
