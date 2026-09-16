@@ -10,9 +10,11 @@
 locale         : "en-US"
 site_theme     : "default"   # or "air" if you prefer that look
 title          : "Ruohan Zhang – PhD Student, Robotics @ UIUC"
+title_zh       : "张若涵 — UIUC 机器人学博士生"
 title_separator: "-"
 name           : &name "Ruohan Zhang 张若涵"
 description    : &description "Robotics PhD @ UIUC — tactile sensing, stable and generalizable manipulation"
+description_zh : "UIUC 机器人学博士生 — 触觉传感，稳定且可泛化的机器人操作"
 
 # ---- GitHub Pages settings (user site) ----
 url            : "https://rhzhang-ustc.github.io"   # must be your exact user site URL
@@ -90,6 +92,16 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
+# Chinese overrides for the sidebar author profile. Only the fields that differ
+# from site.author are listed; everything else (avatar, links, icons) is shared.
+# Rendered by _includes/author-profile.html when page.lang == "zh".
+author_zh:
+  name             : "张若涵"
+  bio              : "面向稳定、可泛化机器人操作的触觉传感与感知。"
+  location         : "美国伊利诺伊州香槟市"
+  employer         : "伊利诺伊大学厄巴纳-香槟分校"
+
+
 # Structured data (schema.org JSON-LD) emitted by _includes/structured-data.html
 # This gives search engines and AI crawlers an unambiguous entity record.
 structured_data:
@@ -117,10 +129,13 @@ structured_data:
 publication_category:
   books:
     title: 'Books'
+    title_zh: '专著'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    title_zh: '期刊论文'
   conferences:
     title: 'Conference Papers'
+    title_zh: '会议论文'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -176,6 +191,7 @@ facebook:
   publisher              :
 og_image                 : "og-card.png"  # 1200x630 link-preview image in /images/
 og_description           : "Ruohan Zhang is a Robotics Ph.D. student at the University of Illinois Urbana-Champaign, working on tactile sensing, robot perception, and stable, generalizable manipulation."
+og_description_zh        : "张若涵是伊利诺伊大学厄巴纳-香槟分校的机器人学博士生，研究方向为触觉传感、机器人感知，以及稳定且可泛化的机器人操作。"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

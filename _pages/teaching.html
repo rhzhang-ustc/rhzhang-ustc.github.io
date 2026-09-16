@@ -2,12 +2,15 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
+lang_alt: /zh/teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% assign teaching_by_year = site.teaching | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% comment %}Only the English documents; the Chinese ones are listed at /zh/teaching/.{% endcomment %}
+{% assign en_teaching = site.teaching | where_exp: "post", "post.lang != 'zh'" %}
+{% assign teaching_by_year = en_teaching | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year in teaching_by_year %}
   <h2 class="archive__subtitle">{{ year.name }}</h2>

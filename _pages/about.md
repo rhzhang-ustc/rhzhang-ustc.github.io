@@ -1,5 +1,6 @@
 ---
 permalink: /
+lang_alt: /zh/
 author_profile: true
 title: ""
 redirect_from: 

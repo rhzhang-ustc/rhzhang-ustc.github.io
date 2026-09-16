@@ -4,6 +4,11 @@
   publication page, so search engines and AI crawlers get an unambiguous
   machine-readable entity record (important: "Ruohan Zhang" is a common name).
   Values come from site.author and site.structured_data in _config.yml.
+
+  The Chinese mirror under /zh/ deliberately does NOT repeat these records: a
+  second Person or ScholarlyArticle at a different URL would split the entity
+  crawlers are meant to merge. /zh/ instead points at the same Person @id, and
+  the hreflang alternates in seo.html link the translated pages together.
 {% endcomment %}
 {% assign a = site.author %}
 {% assign sd = site.structured_data %}
@@ -54,7 +59,19 @@
 </script>
 {% endif %}
 
-{% if page.collection == "publications" %}
+{% if page.url == "/zh/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": {{ site_url | append: "/zh/" | jsonify }},
+  "inLanguage": "zh-Hans",
+  "mainEntity": { "@id": {{ site_url | append: "/#person" | jsonify }} }
+}
+</script>
+{% endif %}
+
+{% if page.collection == "publications" and page.lang != "zh" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

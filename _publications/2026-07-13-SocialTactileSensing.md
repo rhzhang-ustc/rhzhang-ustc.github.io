@@ -3,6 +3,7 @@ title: "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtu
 collection: publications
 category: conferences
 permalink: /publication/social-tactile-sensing/
+lang_alt: /zh/publication/social-tactile-sensing/
 excerpt: 'We propose a **requirement-driven framework** that derives whole-body tactile sensing requirements—spatial resolution and placement—directly from VR-collected human-robot interaction data, and release an open-source dataset of 5,520 social touch trials.'
 date: 2026-07-13
 authors:

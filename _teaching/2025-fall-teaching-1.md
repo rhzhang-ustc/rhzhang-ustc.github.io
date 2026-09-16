@@ -3,6 +3,7 @@ title: "Electrical & Electronics Lab (ECE 206) — UIUC"
 collection: teaching
 type: "Undergraduate Course (TA)"
 permalink: /teaching/uiuc-ece206-electrical-electronics-lab
+lang_alt: /zh/teaching/uiuc-ece206-electrical-electronics-lab
 venue: "University of Illinois Urbana–Champaign, ECE Department"
 date: 2025-09-01        # Fall ’25
 location: "Champaign, Illinois, USA"

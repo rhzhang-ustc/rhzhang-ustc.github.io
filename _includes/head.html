@@ -1,11 +1,12 @@
 {% include base_path %}
+{% include lang.html %}
 
 <meta charset="utf-8">
 
 {% include seo.html %}
 {% include structured-data.html %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site_title_local }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -14,6 +15,27 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+{%- comment -%}
+Language preference. English is always the default: a first-time visitor is
+never redirected. Once someone uses the 中文 / EN switch in the header we
+remember that choice and, on a later visit, send them straight to the
+counterpart page when one exists. Runs before the body renders so there is no
+flash of the wrong language, and uses location.replace so the back button still
+leaves the site instead of bouncing between translations.
+{%- endcomment -%}
+<script>
+  (function () {
+    var here = {{ page_lang | jsonify }};
+    var alt = {{ page.lang_alt | default: "" | jsonify }};
+    if (!alt) { return; }
+    try {
+      if (localStorage.getItem('site-lang') === (here === 'zh' ? 'en' : 'zh')) {
+        location.replace({{ base_path | jsonify }} + alt);
+      }
+    } catch (e) { /* storage blocked - stay put */ }
+  })();
 </script>
 
 <!-- For all browsers -->

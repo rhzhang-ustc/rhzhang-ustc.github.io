@@ -2,6 +2,7 @@
 layout: archive
 title: "Publications"
 permalink: /publications/
+lang_alt: /zh/publications/
 author_profile: true
 ---
 
@@ -11,11 +12,14 @@ author_profile: true
 
 {% include base_path %}
 
+{% comment %}Only the English documents; the Chinese ones are listed at /zh/publications/.{% endcomment %}
+{% assign en_publications = site.publications | where_exp: "post", "post.lang != 'zh'" %}
+
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in en_publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -27,7 +31,7 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% for post in en_publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}

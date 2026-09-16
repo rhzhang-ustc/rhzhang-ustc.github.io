@@ -3,6 +3,7 @@ title: "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvestin
 collection: publications
 category: manuscripts
 permalink: /publication/fruittouch/
+lang_alt: /zh/publication/fruittouch/
 header:
   teaser: fruittouch_teaser.png
 excerpt: 'We propose **FruitTouch**, a compact gripper that integrates high-resolution, vision-based tactile sensing to enable gentle, scalable fruit harvesting with real-time force, slip, and softness estimation.'

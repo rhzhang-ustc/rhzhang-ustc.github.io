@@ -307,6 +307,9 @@ zh: &DEFAULT_ZH
   loading_label              : "加载中..."
 zh-CN:
   <<: *DEFAULT_ZH
+  # Upstream translates feed_label as "打赏" (tip/donate), which is wrong for an
+  # RSS link. Override it here rather than editing the shared zh anchor.
+  feed_label                 : "订阅"
 
 # Chinese (traditional)
 # -----------------

@@ -1,0 +1,37 @@
+{%- comment -%}
+Per-page language context. Assigns (leaking into the including scope, the same
+way base_path does):
+
+  page_lang         "en" or "zh"
+  html_lang         value for <html lang>
+  ui                the ui-text strings for this page's language
+  nav_links         the header link list for this page's language
+  site_title_local  the site title in this page's language
+  lang_alt_url      URL of this page's counterpart in the other language
+  lang_switch_label accessible label / tooltip for the switch button
+  lang_alt_lang     hreflang value for the counterpart
+  lang_alt_exact    true only when page.lang_alt names a real translated page
+
+Pages opt in with `lang: zh` plus `lang_alt: <url of the English page>`;
+English pages name their translation with `lang_alt: <url of the zh page>`.
+{%- endcomment -%}
+{% if page.lang == 'zh' %}
+  {% assign page_lang = 'zh' %}
+  {% assign html_lang = 'zh-Hans' %}
+  {% assign ui = site.data.ui-text['zh-CN'] %}
+  {% assign nav_links = site.data.navigation.main_zh %}
+  {% assign site_title_local = site.title_zh | default: site.title %}
+  {% assign lang_alt_url = page.lang_alt | default: '/' %}
+  {% assign lang_switch_label = '切换到 English' %}
+  {% assign lang_alt_lang = 'en' %}
+{% else %}
+  {% assign page_lang = 'en' %}
+  {% assign html_lang = site.locale | slice: 0, 2 %}
+  {% assign ui = site.data.ui-text[site.locale] %}
+  {% assign nav_links = site.data.navigation.main %}
+  {% assign site_title_local = site.title %}
+  {% assign lang_alt_url = page.lang_alt | default: '/zh/' %}
+  {% assign lang_switch_label = 'Switch to 中文' %}
+  {% assign lang_alt_lang = 'zh-Hans' %}
+{% endif %}
+{% if page.lang_alt %}{% assign lang_alt_exact = true %}{% else %}{% assign lang_alt_exact = false %}{% endif %}

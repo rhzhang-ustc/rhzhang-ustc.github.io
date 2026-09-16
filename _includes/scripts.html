@@ -1,3 +1,18 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+{%- comment -%}
+Remember which language the visitor picked from the header switch, so the
+redirect in head.html can honour it next time. Set before navigating; the link
+itself does the navigation.
+{%- endcomment -%}
+<script>
+  (function () {
+    var link = document.getElementById('lang-toggle-link');
+    if (!link) { return; }
+    link.addEventListener('click', function () {
+      try { localStorage.setItem('site-lang', link.dataset.lang); } catch (e) {}
+    });
+  })();
+</script>
+
 {% include analytics.html %}

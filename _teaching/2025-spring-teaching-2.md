@@ -3,6 +3,7 @@ title: "Electrical & Electronic Circuits (ECE 205) — UIUC"
 collection: teaching
 type: "Undergraduate Course (TA)"
 permalink: /teaching/uiuc-ece205-electrical-electronic-circuits
+lang_alt: /zh/teaching/uiuc-ece205-electrical-electronic-circuits
 venue: "University of Illinois Urbana–Champaign, ECE Department"
 date: 2025-01-15        # Spring 2025 approx
 location: "Champaign, Illinois, USA"

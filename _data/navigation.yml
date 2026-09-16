@@ -25,3 +25,18 @@ main:
 
   # - title: "Blog Posts"
   #   url: /year-archive/
+
+# Chinese mirror of the header links. Rendered on pages with `lang: zh`.
+# Keep in sync with `main:` above.
+main_zh:
+  - title: "主页"
+    url: /zh/
+
+  - title: "学术论文"
+    url: /zh/publications/
+
+  - title: "教学"
+    url: /zh/teaching/
+
+  - title: "简历"
+    url: /files/cv.pdf

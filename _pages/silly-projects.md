@@ -1,6 +1,7 @@
 ---
 title: "Silly Projects"
 permalink: /silly-projects/
+lang_alt: /zh/silly-projects/
 author_profile: true
 ---
 

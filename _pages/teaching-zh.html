@@ -1,0 +1,28 @@
+---
+layout: archive
+title: "教学"
+permalink: /zh/teaching/
+lang: zh
+lang_alt: /teaching/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% comment %}Only the Chinese documents; the English ones are listed at /teaching/.{% endcomment %}
+{% assign zh_teaching = site.teaching | where: "lang", "zh" %}
+{% assign teaching_by_year = zh_teaching | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+{% for year in teaching_by_year %}
+  <h2 class="archive__subtitle">{{ year.name }}</h2>
+  <ul class="archive__list">
+    {% for post in year.items %}
+      <li class="archive__list-item">
+        <p>
+          <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a><br>
+          <span>{{ post.type }}</span>{% if post.venue %}, <i>{{ post.venue }}</i>{% endif %}
+        </p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
