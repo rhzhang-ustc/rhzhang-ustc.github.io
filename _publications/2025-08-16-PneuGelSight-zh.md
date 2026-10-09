@@ -17,13 +17,13 @@ authors:
   - Wenzhen Yuan
 venue: 'The International Journal of Robotics Research (IJRR)'
 paperurl: 'https://arxiv.org/abs/2508.18443'
-projecturl: 'https://rhzhang-ustc.github.io/PneuGelSight-project/'
+projecturl: 'https://ruohan-zhang.com/PneuGelSight-project/'
 citation: 'Ruohan Zhang, Uksang Yoo, Yichen Li, Arpit Agarwal, Wenzhen Yuan. (2025). &quot;PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing.&quot; <i>The International Journal of Robotics Research (IJRR)</i>.'
 ---
 
 **Ruohan Zhang**, Uksang Yoo, Yichen Li, Arpit Agarwal, Wenzhen Yuan
 
-[项目主页](https://rhzhang-ustc.github.io/PneuGelSight-project/){: .btn .btn--primary} [arXiv:2508.18443](https://arxiv.org/abs/2508.18443){: .btn .btn--primary} [PDF](https://arxiv.org/pdf/2508.18443){: .btn .btn--primary}
+[项目主页](https://ruohan-zhang.com/PneuGelSight-project/){: .btn .btn--primary} [arXiv:2508.18443](https://arxiv.org/abs/2508.18443){: .btn .btn--primary} [PDF](https://arxiv.org/pdf/2508.18443){: .btn .btn--primary}
 
 ![PneuGelSight teaser](/images/pneugelsight_teaser.png){: .pub-figure}
 

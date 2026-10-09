@@ -43,11 +43,11 @@ title: ""
 </div>
 
 <div class="pub-item">
-  <h3 class="pub-title"><a href="https://rhzhang-ustc.github.io/PneuGelSight-project/">PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing</a></h3>
+  <h3 class="pub-title"><a href="https://ruohan-zhang.com/PneuGelSight-project/">PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing</a></h3>
   <p class="pub-authors"><span class="pub-me">Ruohan Zhang</span>, Uksang Yoo, Yichen Li, Arpit Agarwal, Wenzhen Yuan</p>
   <p class="pub-venue">2025, Sage, The International Journal of Robotics Research (IJRR)</p>
   <p class="pub-links">
-    <a href="https://rhzhang-ustc.github.io/PneuGelSight-project/">项目主页</a>
+    <a href="https://ruohan-zhang.com/PneuGelSight-project/">项目主页</a>
     <a href="https://arxiv.org/abs/2508.18443">arXiv</a>
     <a href="/zh/publication/pneugelsight/">详情</a>
   </p>

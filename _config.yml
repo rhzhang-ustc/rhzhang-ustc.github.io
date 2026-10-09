@@ -17,7 +17,7 @@ description    : &description "Robotics PhD @ UIUC — tactile sensing, stable a
 description_zh : "UIUC 机器人学博士生 — 触觉传感，稳定且可泛化的机器人操作"
 
 # ---- GitHub Pages settings (user site) ----
-url            : "https://rhzhang-ustc.github.io"   # must be your exact user site URL
+url            : "https://ruohan-zhang.com"       # must be your exact site URL (custom domain, see CNAME)
 baseurl        : ""                                 # keep empty for user sites
 
 # This is used by site.github.* variables and some includes.

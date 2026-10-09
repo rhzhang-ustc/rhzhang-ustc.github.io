@@ -5,7 +5,7 @@ cv:
   custom_connections:
     - fontawesome_icon: link
       placeholder: ''
-      url: https://rhzhang-ustc.github.io/
+      url: https://ruohan-zhang.com/
     - fontawesome_icon: graduation-cap
       placeholder: ''
       url: https://scholar.google.com/citations?user=4hwZIh0AAAAJ
@@ -41,7 +41,7 @@ cv:
     Publications:
       - bullet: '**Zhang, R.**, Mirzaee, M. A., Yuan, W. "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting," *IEEE Robotics and Automation Letters (RA-L), 2026* [[Webpage](https://fruittouch-dev.github.io/fruittouch/)]'
       - bullet: 'Crowder, D., **Zhang, R.**, Block, A. E., Yuan, W. "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction," *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026* [[arXiv](https://arxiv.org/abs/2607.11690)]'
-      - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *Sage, The International Journal of Robotics Research (IJRR), 2025* [[Webpage](https://rhzhang-ustc.github.io/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'
+      - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *Sage, The International Journal of Robotics Research (IJRR), 2025* [[Webpage](https://ruohan-zhang.com/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'
 
     Academic Services:
       - label: Reviewer

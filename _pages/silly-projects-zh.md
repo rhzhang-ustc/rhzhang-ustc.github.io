@@ -16,7 +16,7 @@ author_profile: true
   </div>
   <div class="project-preview-body">
     <p>一个小玩具：根据一位研究者近期的工作，猜猜他们下一篇会发什么。</p>
-    <p><a href="https://rhzhang-ustc.github.io/WhatWillTheyPublishNext/">试试看 →</a></p>
+    <p><a href="https://ruohan-zhang.com/WhatWillTheyPublishNext/">试试看 →</a></p>
   </div>
 </div>
 
@@ -28,6 +28,6 @@ author_profile: true
   </div>
   <div class="project-preview-body">
     <p>一款跳跃游戏，摩擦力决定你的命运。在冰面、橡胶、金属等各种材质的平台之间跳跃——蓄力、起跳，别滑出去。</p>
-    <p><a href="https://rhzhang-ustc.github.io/slipland/">开始玩 →</a></p>
+    <p><a href="https://ruohan-zhang.com/slipland/">开始玩 →</a></p>
   </div>
 </div>

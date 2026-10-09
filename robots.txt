@@ -1,4 +1,4 @@
-# https://rhzhang-ustc.github.io/robots.txt
+# https://ruohan-zhang.com/robots.txt
 # All crawlers, including AI/LLM crawlers, are welcome on this site.
 
 User-agent: *
@@ -54,4 +54,4 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-Sitemap: https://rhzhang-ustc.github.io/sitemap.xml
+Sitemap: https://ruohan-zhang.com/sitemap.xml

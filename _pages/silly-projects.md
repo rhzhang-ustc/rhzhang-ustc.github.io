@@ -15,7 +15,7 @@ Small, silly things built for fun.
   </div>
   <div class="project-preview-body">
     <p>A toy that guesses what a researcher might publish next, based on their recent work.</p>
-    <p><a href="https://rhzhang-ustc.github.io/WhatWillTheyPublishNext/">Try it →</a></p>
+    <p><a href="https://ruohan-zhang.com/WhatWillTheyPublishNext/">Try it →</a></p>
   </div>
 </div>
 
@@ -27,6 +27,6 @@ Small, silly things built for fun.
   </div>
   <div class="project-preview-body">
     <p>A jumping game where surface friction decides your fate. Hop across platforms made of ice, rubber, metal, and more—charge your jump, release, and try not to skid off.</p>
-    <p><a href="https://rhzhang-ustc.github.io/slipland/">Play →</a></p>
+    <p><a href="https://ruohan-zhang.com/slipland/">Play →</a></p>
   </div>
 </div>
