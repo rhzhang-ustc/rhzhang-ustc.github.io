@@ -6,14 +6,15 @@
 {% endif %}
 
 {%- comment -%}
-On Chinese pages the biographic strings come from site.author_zh; everything
-else (avatar, academic and social links) is shared with the English profile.
+On Chinese pages the biographic strings and CV come from site.author_zh;
+the avatar, academic and social links are shared with the English profile.
 {%- endcomment -%}
 {% if page_lang == 'zh' %}
   {% assign author_name = site.author_zh.name | default: author.name %}
   {% assign author_bio = site.author_zh.bio | default: author.bio %}
   {% assign author_location = site.author_zh.location | default: author.location %}
   {% assign author_employer = site.author_zh.employer | default: author.employer %}
+  {% assign author_cv = site.author_zh.cv | default: author.cv %}
   {% assign follow_label = "关注" %}
   {% assign cv_label = "下载简历" %}
   {% assign visitor_map_label = "访客地图" %}
@@ -22,6 +23,7 @@ else (avatar, academic and social links) is shared with the English profile.
   {% assign author_bio = author.bio %}
   {% assign author_location = author.location %}
   {% assign author_employer = author.employer %}
+  {% assign author_cv = author.cv %}
   {% assign follow_label = "Follow" %}
   {% assign cv_label = "Download CV" %}
   {% assign visitor_map_label = "Visitor Map" %}
@@ -191,9 +193,9 @@ else (avatar, academic and social links) is shared with the English profile.
       {% if author.zhihu %}
       <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu icon-pad-right" aria-hidden="true"></i>Zhihu</a></li>
       {% endif %}      
-      {% if author.cv %}
+      {% if author_cv %}
         <li>
-          <a href="{{ author.cv }}" target="_blank">
+          <a href="{{ author_cv }}" target="_blank">
             <i class="fas fa-fw fa-file-pdf icon-pad-right" aria-hidden="true"></i>{{ cv_label }}
           </a>
         </li>

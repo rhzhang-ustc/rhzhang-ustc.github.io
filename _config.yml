@@ -97,6 +97,7 @@ author:
 # Rendered by _includes/author-profile.html when page.lang == "zh".
 author_zh:
   name             : "张若涵"
+  cv               : "/files/cv-zh.pdf"
   bio              : "面向稳定、可泛化机器人操作的触觉传感与感知。"
   location         : "美国伊利诺伊州香槟市"
   employer         : "伊利诺伊大学厄巴纳-香槟分校"
@@ -225,7 +226,7 @@ exclude:
   - talkmap.ipynb
   - talkmap_out.ipynb
   - RuohanZhang_CV.docx   # CV is published as files/cv.pdf only
-  - cv                    # RenderCV source; the rendered PDF lives at files/cv.pdf
+  - cv                    # RenderCV sources; rendered PDFs live in files/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

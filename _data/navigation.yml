@@ -4,8 +4,8 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE: the CV is published as a PDF only (files/cv.pdf) so there is a single
-#       source of truth to keep in sync.
+# The English and Chinese CVs are published as PDFs. Their editable RenderCV
+# sources live in cv/ and should be kept in sync.
 
 main:
   - title: "Home"
@@ -39,4 +39,4 @@ main_zh:
     url: /zh/teaching/
 
   - title: "简历"
-    url: /files/cv.pdf
+    url: /files/cv-zh.pdf

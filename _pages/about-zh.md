@@ -66,7 +66,7 @@ title: ""
 
 ## 联系方式
 
-- **简历：** [下载简历（PDF）](/files/cv.pdf)
+- **简历：** [中文简历（PDF）](/files/cv-zh.pdf) · [英文简历（PDF）](/files/cv.pdf)
 - **邮箱：** [rz21@illinois.edu](mailto:rz21@illinois.edu)
 - **GitHub：** [rhzhang-ustc](https://github.com/rhzhang-ustc)
 - **领英：** [Ruohan Zhang](https://www.linkedin.com/in/ruohan-zhang-uiuc)
