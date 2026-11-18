@@ -5,6 +5,8 @@ category: conferences
 permalink: /zh/publication/social-tactile-sensing/
 lang: zh
 lang_alt: /publication/social-tactile-sensing/
+header:
+  teaser: social_tactile_teaser.png
 excerpt: '我们提出一种**需求驱动的框架**，直接从 VR 采集的人机交互数据中推导全身触觉传感需求——空间分辨率与布置位置，并发布了包含 5,520 次社交触摸试验的开源数据集。'
 date: 2026-07-13
 authors:
@@ -20,6 +22,8 @@ citation: 'Dakarai Crowder, Ruohan Zhang, Alexis E. Block, Wenzhen Yuan. (2026).
 Dakarai Crowder, **Ruohan Zhang**, Alexis E. Block, Wenzhen Yuan
 
 [arXiv:2607.11690](https://arxiv.org/abs/2607.11690){: .btn .btn--primary} [PDF](https://arxiv.org/pdf/2607.11690){: .btn .btn--primary}
+
+![Social tactile sensing teaser](/images/social_tactile_teaser.png){: .pub-figure}
 
 ## 摘要
 

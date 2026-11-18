@@ -97,7 +97,16 @@
 
 /* Publication list (homepage) */
 .pub-list {
-  margin: 1.25em 0 2em;
+  margin: 0.9em 0 1.75em;
+}
+
+/* Sub-heading for a group of publications (journal, conference) */
+.pub-group {
+  margin: 1.4em 0 0;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.75;
 }
 
 .pub-item {

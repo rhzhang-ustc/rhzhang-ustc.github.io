@@ -4,6 +4,8 @@ collection: publications
 category: conferences
 permalink: /publication/social-tactile-sensing/
 lang_alt: /zh/publication/social-tactile-sensing/
+header:
+  teaser: social_tactile_teaser.png
 excerpt: 'We propose a **requirement-driven framework** that derives whole-body tactile sensing requirements—spatial resolution and placement—directly from VR-collected human-robot interaction data, and release an open-source dataset of 5,520 social touch trials.'
 date: 2026-07-13
 authors:
@@ -19,6 +21,8 @@ citation: 'Dakarai Crowder, Ruohan Zhang, Alexis E. Block, Wenzhen Yuan. (2026).
 Dakarai Crowder, **Ruohan Zhang**, Alexis E. Block, Wenzhen Yuan
 
 [arXiv:2607.11690](https://arxiv.org/abs/2607.11690){: .btn .btn--primary} [PDF](https://arxiv.org/pdf/2607.11690){: .btn .btn--primary}
+
+![Social tactile sensing teaser](/images/social_tactile_teaser.png){: .pub-figure}
 
 ## Abstract
 

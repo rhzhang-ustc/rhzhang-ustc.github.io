@@ -11,9 +11,6 @@ main:
   - title: "Home"
     url: /
 
-  - title: "Publications"
-    url: /publications/
-
   - title: "Teaching"
     url: /teaching/
 
@@ -31,9 +28,6 @@ main:
 main_zh:
   - title: "主页"
     url: /zh/
-
-  - title: "学术论文"
-    url: /zh/publications/
 
   - title: "教学"
     url: /zh/teaching/

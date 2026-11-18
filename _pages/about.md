@@ -24,6 +24,8 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 
 ## Publications
 
+<h3 class="pub-group">Journal Articles</h3>
+
 <div class="pub-list">
 
 <div class="pub-item pub-item--media">
@@ -40,19 +42,6 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 </div>
 
 <div class="pub-item pub-item--media">
-  <a class="pub-thumb" href="https://arxiv.org/abs/2607.11690"><img src="/images/social_tactile_teaser.png" alt="VR social touch data collection with a humanoid robot" loading="lazy"></a>
-  <div class="pub-body">
-    <h3 class="pub-title"><a href="https://arxiv.org/abs/2607.11690">Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction</a></h3>
-    <p class="pub-authors">Dakarai Crowder, <span class="pub-me">Ruohan Zhang</span>, Alexis E. Block, Wenzhen Yuan</p>
-    <p class="pub-venue">2026, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
-    <p class="pub-links">
-      <a href="https://arxiv.org/abs/2607.11690">arXiv</a>
-      <a href="/publication/social-tactile-sensing/">Details</a>
-    </p>
-  </div>
-</div>
-
-<div class="pub-item pub-item--media">
   <a class="pub-thumb" href="https://ruohan-zhang.com/PneuGelSight-project/"><img src="/images/pneugelsight_teaser.png" alt="PneuGelSight soft robot" loading="lazy"></a>
   <div class="pub-body">
     <h3 class="pub-title"><a href="https://ruohan-zhang.com/PneuGelSight-project/">PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing</a></h3>
@@ -62,6 +51,25 @@ My research lies at the intersection of **robot perception, tactile sensing, and
       <a href="https://ruohan-zhang.com/PneuGelSight-project/">Webpage</a>
       <a href="https://arxiv.org/abs/2508.18443">arXiv</a>
       <a href="/publication/pneugelsight/">Details</a>
+    </p>
+  </div>
+</div>
+
+</div>
+
+<h3 class="pub-group">Conference Papers</h3>
+
+<div class="pub-list">
+
+<div class="pub-item pub-item--media">
+  <a class="pub-thumb" href="https://arxiv.org/abs/2607.11690"><img src="/images/social_tactile_teaser.png" alt="VR social touch data collection with a humanoid robot" loading="lazy"></a>
+  <div class="pub-body">
+    <h3 class="pub-title"><a href="https://arxiv.org/abs/2607.11690">Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction</a></h3>
+    <p class="pub-authors">Dakarai Crowder, <span class="pub-me">Ruohan Zhang</span>, Alexis E. Block, Wenzhen Yuan</p>
+    <p class="pub-venue">2026, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+    <p class="pub-links">
+      <a href="https://arxiv.org/abs/2607.11690">arXiv</a>
+      <a href="/publication/social-tactile-sensing/">Details</a>
     </p>
   </div>
 </div>
