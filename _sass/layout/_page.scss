@@ -108,15 +108,14 @@
   }
 }
 
-/* Publication with a thumbnail on the left; stacks on narrow screens */
+/* Publication with a small thumbnail on the left, at every screen width */
 .pub-item--media {
   display: flex;
   align-items: flex-start;
   gap: 1em;
 
   @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 0.6em;
+    gap: 0.75em;
   }
 }
 
@@ -128,15 +127,15 @@
   img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 4px;
     border: 1px solid var(--global-border-color);
   }
 
   @media (max-width: 600px) {
-    flex-basis: auto;
-    width: 100%;
-    max-width: 320px;
+    flex-basis: 96px;
+    width: 96px;
   }
 }
 
