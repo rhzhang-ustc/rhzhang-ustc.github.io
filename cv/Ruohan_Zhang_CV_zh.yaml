@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
-# Chinese resume for research and engineering applications in China.
+# One-page Chinese resume, published as files/cv-zh.pdf.
+# The longer two-page version is Ruohan_Zhang_CV_zh_full.yaml; keep facts in sync.
 # Adapt selection and emphasis to the audience; verify facts against the English CV.
 cv:
   name: 张若涵 (Ruohan Zhang)
@@ -30,58 +31,30 @@ cv:
         end_date: 2023-06
         summary: 'GPA：4.05/4.30；排名：1/96；导师：Chong Luo'
 
-    核心技能:
-      - label: 算法开发
-        details: Python、C/C++、PyTorch；视觉触觉感知、强化学习、扩散模型
-      - label: 机器人系统
-        details: ROS、Isaac Lab、MuJoCo；传感器集成、实时感知与实物实验
-      - label: 机械与电路设计
-        details: SolidWorks、Onshape、Fusion 360、Altium Designer
-      - label: 仿真与分析
-        details: Blender、Abaqus、COMSOL、SOFA、MATLAB
-
-    代表性项目:
-      - name: 视触觉果实采摘夹爪（FruitTouch）
-        outcome: RA-L 2026 · 第一作者
-        summary: 'UIUC RoboTouch Lab｜通过夹爪内的触觉感知实现果实无损采摘'
-        highlights:
-          - 设计紧凑型光机结构，优化成像光路，适应不同尺寸果实的抓取。
-          - 基于 ROS 实现实时力估计、滑移检测与软硬度预测，为夹持过程提供接触反馈。
-          - 完成圣女果实地采摘实验，验证抓取稳定性与果实损伤防护效果。
-      - name: 软体机械臂形状与触觉感知（PneuGelSight）
-        outcome: IJRR 2025 · 第一作者
-        summary: 'UIUC RoboTouch Lab｜利用内嵌相机同时感知机械臂形状与接触表面'
-        highlights:
-          - 结合光度立体法与深度学习，实现气动软体机械臂的本体感知与触觉传感。
-          - 形状重建平均 Chamfer 距离由 8.85 mm 降至 5.35 mm。
-          - 表面纹理深度误差小于 0.2 mm，推理时间小于 0.05 s。
-
     研究经历:
-      - company: UIUC · RoboTouch Lab
+      - company: UIUC · RoboTouch Lab（导师：Wenzhen Yuan）
         position: ''
         start_date: 2023-09
         end_date: present
-        summary: '导师：Wenzhen Yuan'
-        research_details: |-
-          **主动触觉探索与操作学习（在研）**
-
-          在 Isaac Lab 中开发强化学习策略，通过主动接触与视触觉反馈估计物体物理属性，研究感知、探索动作与操作策略的联合优化。
-
-          #v(0.28cm)
-          **人机触觉交互数据采集**
-
-          设计并制作可穿戴触觉反馈手套，接入 VR 平台，采集人机交互中的全身接触数据。相关合作论文：IROS 2026，第二作者。
-      - company: 微软亚洲研究院 · 智能多媒体实验室
+        highlights:
+          - '**学习探索性动作以感知物理属性（RSS 2027 在投，第一作者）** 提出基于信念的强化学习策略，自主选择抓取、放置、推动、拖拽等动作基元，利用腕部力/力矩与深度信息推断物体的质量与摩擦系数；前向模型由仿真交互数据训练，并以粒子表示对物理属性的信念。在 45 个未见物体上，质量与摩擦估计误差较经典方法分别降低 45% 和 30%，不安全事件约为其三分之一，并无需微调部署到 UR5e 实体机器人。'
+          - '**视触觉果实采摘夹爪 FruitTouch（RA-L 2026，第一作者）** 设计紧凑型光机结构并优化成像光路，适应不同尺寸果实的抓取；基于 ROS 实现实时力估计、滑移检测与软硬度预测，并在圣女果实地采摘实验中验证。'
+          - '**软体机械臂形状与触觉感知 PneuGelSight（IJRR 2025，第一作者）** 结合光度立体法与深度学习，利用内嵌相机实现本体感知与触觉传感；形状重建平均 Chamfer 距离由 8.85 mm 降至 5.35 mm，表面纹理深度误差小于 0.2 mm，推理时间小于 0.05 s。'
+          - '**人机触觉交互数据采集（IROS 2026，第二作者）** 设计并制作可穿戴触觉反馈手套，接入 VR 平台，采集人机交互中的全身接触数据。'
+      - company: 微软亚洲研究院 · 智能多媒体实验室（负责人：Chong Luo）
         position: ''
         start_date: 2022-09
         end_date: 2023-07
-        summary: '负责人：Chong Luo，首席研究员'
-        research_details: |-
-          **扩散模型与目标跟踪**
-
-          开发严重遮挡条件下的扩散模型目标跟踪方法，并针对大规模数据集优化计算效率与内存占用。
+        highlights:
+          - '**扩散模型与目标跟踪** 开发严重遮挡条件下的扩散模型目标跟踪方法，并优化大规模数据集上的计算效率与内存占用。'
 
     代表论文:
+      - title: Learning Exploratory Procedures for Physical Property Perception
+        authors: ['**Zhang, R.**', 'Yuan, W.']
+        journal: 'Robotics: Science and Systems (RSS)'
+        short_venue: RSS（在投）
+        date: 2027
+        authorship: 第一作者
       - title: 'FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting'
         authors: ['**Zhang, R.**', 'Mirzaee, M. A.', 'Yuan, W.']
         journal: IEEE Robotics and Automation Letters (RA-L)
@@ -104,24 +77,28 @@ cv:
         authorship: 第二作者
         links: '[arXiv](https://arxiv.org/abs/2607.11690)'
 
+    专业技能:
+      - label: 机器人学习
+        details: 强化学习、Sim-to-Real 迁移、粒子滤波状态估计、点云感知
+      - label: 软件
+        details: Python、C++、PyTorch、ROS、Isaac Lab、MuJoCo、MATLAB
+      - label: 硬件
+        details: UR5e 机械臂、WSG 50 夹爪、力/力矩传感器、深度相机、视触觉传感器
+      - label: 设计与仿真
+        details: SolidWorks、Onshape、Fusion 360、Blender；Abaqus、COMSOL、SOFA 有限元分析
+
     荣誉与学术服务:
-      - label: 郭沫若奖学金
-        details: 2023年，中国科学技术大学本科生最高荣誉（前 1%）
-      - label: 国家奖学金
-        details: 2021年、2022年
-      - label: 学术审稿
-        details: IJRR、RA-L、T-RL；ICRA、IROS
-      - label: 课程助教
-        details: UIUC，ECE 205（2025年春季）、ECE 206（2025年秋季）
-      - label: 语言
-        details: 中文（母语）；英语（科研与工作交流）
+      - label: 荣誉
+        details: 郭沫若奖学金（中国科学技术大学本科生最高荣誉），2023年；国家奖学金，2021年、2022年
+      - label: 学术服务
+        details: IJRR、RA-L、T-RL、ICRA、IROS 审稿人；UIUC ECE 205、ECE 206 课程助教
 
 design:
   theme: engineeringclassic
   page:
     size: a4
-    top_margin: 0.6in
-    bottom_margin: 0.6in
+    top_margin: 0.5in
+    bottom_margin: 0.45in
     left_margin: 0.65in
     right_margin: 0.65in
     show_top_note: false
@@ -133,7 +110,7 @@ design:
     connections: rgb(0, 0, 0)
     links: rgb(46, 78, 104)
   typography:
-    line_spacing: 0.75em
+    line_spacing: 0.65em
     alignment: left
     font_family:
       body: Songti SC
@@ -159,18 +136,18 @@ design:
   section_titles:
     type: with_full_line
     line_thickness: 0.35pt
-    space_above: 0.45cm
-    space_below: 0.24cm
+    space_above: 0.32cm
+    space_below: 0.2cm
   sections:
     allow_page_break: false
-    space_between_regular_entries: 1em
+    space_between_regular_entries: 0.55em
     space_between_text_based_entries: 0.25em
   entries:
     date_and_location_width: 3.9cm
     highlights:
       bullet: "-"
-      space_above: 0.15cm
-      space_between_items: 0.18cm
+      space_above: 0.12cm
+      space_between_items: 0.12cm
   templates:
     single_date: YEAR.MONTH_IN_TWO_DIGITS
     date_range: START_DATE - END_DATE
@@ -184,15 +161,12 @@ design:
     education_entry:
       main_column: |-
         **INSTITUTION**
-        AREA · DEGREE
-        SUMMARY
+        AREA · DEGREE；SUMMARY
       date_and_location_column: DATE
     experience_entry:
       main_column: |-
         **COMPANY**
-        SUMMARY
-        #v(0.18cm)
-        RESEARCH_DETAILS
+        HIGHLIGHTS
       date_and_location_column: DATE
     normal_entry:
       main_column: |-

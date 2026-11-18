@@ -1,20 +1,20 @@
 # CV sources
 
-- `Ruohan_Zhang_CV.yaml`: English CV, published as `files/cv.pdf`.
-- `Ruohan_Zhang_CV_zh.yaml`: Chinese resume for research and engineering jobs in
-  China, published as `files/cv-zh.pdf`.
+- `Ruohan_Zhang_CV.yaml`: one-page English CV, published as `files/cv.pdf`.
+- `Ruohan_Zhang_CV_full.yaml`: longer two-page English CV (adds the coursework
+  project, full venue names, and all scholarships); not published.
+- `Ruohan_Zhang_CV_zh.yaml`: one-page Chinese resume, published as
+  `files/cv-zh.pdf`.
+- `Ruohan_Zhang_CV_zh_full.yaml`: longer two-page Chinese resume (separate
+  skills-first layout with two representative projects); not published.
 
 Keep dates, publication records, links, and research results consistent across
-versions. The Chinese resume is independently edited for job applications; its
-section order and selection of content do not need to match the English CV.
-It leads with education, relevant skills, and two representative projects,
-emphasizing personal contributions, experimental results, and authorship. Other
-research, selected papers, major awards, and academic service follow on page two.
-The older coursework project and secondary scholarship are omitted from this
-edition; they remain in the English source. Full author lists remain in the YAML,
-while the PDF shows publication titles, venues, author position, and links.
+versions. The one-page versions share the same order: education, research
+experience, publications, skills, then honors and service. The Chinese resume
+adds a headline with the target role and shows publication titles, venues,
+author position, and links; full author lists remain in the YAML.
 
-The Chinese resume uses two A4 pages with 10 pt body text. Songti SC supplies
+The Chinese resume uses one A4 page with 10 pt body text. Songti SC supplies
 Chinese characters, and Charter supplies Latin text and numbers, matching the
 English CV's serif style. Both fonts are available on macOS and embedded in the
 PDF. The small `engineeringclassic/Preamble.j2.typ` override pairs the fonts
@@ -34,7 +34,9 @@ rendercv render cv/Ruohan_Zhang_CV_zh.yaml \
 ```
 
 The PDF path is relative to the YAML source. Intermediate Typst files go to the
-temporary output folder. Review both PDF pages before publishing.
+temporary output folder. The English PDF is built the same way from
+`cv/Ruohan_Zhang_CV.yaml` with `--pdf-path ../files/cv.pdf`. Check that each PDF
+still fits on one page before publishing.
 
 Chinese downloads are configured in `_data/navigation.yml`, `_pages/about-zh.md`,
 and `author_zh.cv` in `_config.yml`; the sidebar uses the localized CV when set.

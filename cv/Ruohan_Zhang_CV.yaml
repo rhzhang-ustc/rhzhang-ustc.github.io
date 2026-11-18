@@ -1,3 +1,5 @@
+# One-page English CV, published as files/cv.pdf.
+# The longer two-page version is Ruohan_Zhang_CV_full.yaml; keep facts in sync.
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Ruohan Zhang
@@ -38,71 +40,52 @@ cv:
         end_date: 2023-06
         summary: 'GPA: 4.05/4.30; Rank: 1/96; Advisor: Chong Luo'
 
-    Publications:
-      - bullet: '**Zhang, R.**, Mirzaee, M. A., Yuan, W. "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting," *IEEE Robotics and Automation Letters (RA-L), 2026* [[Webpage](https://fruittouch-dev.github.io/fruittouch/)]'
-      - bullet: 'Crowder, D., **Zhang, R.**, Block, A. E., Yuan, W. "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction," *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026* [[arXiv](https://arxiv.org/abs/2607.11690)]'
-      - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *Sage, The International Journal of Robotics Research (IJRR), 2025* [[Webpage](https://ruohan-zhang.com/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'
-
-    Academic Services:
-      - label: Reviewer
-        details: '**Journals**: IJRR, RA-L, T-RL; **Conferences**: ICRA, IROS'
-      - label: Teaching Assistant
-        details: 'ECE 205 (Spring 2025), ECE 206 (Fall 2025), UIUC'
-
     Research Experience:
-      - company: RoboTouch Lab, UIUC, IL, US
+      - company: RoboTouch Lab, UIUC (advisor Wenzhen Yuan)
         position: ''
         start_date: 2023-09
         end_date: present
-        summary: 'Director: Wenzhen Yuan, Associate Professor, CS'
         highlights:
-          - '**Active touch exploration for manipulation with reinforcement learning.**'
-          - Developing reinforcement learning policies for tactile exploration using Isaac Lab; integrating visuo-tactile feedback for physical property inference; co-optimizing perception, exploratory actions, and manipulation models for fine-grained control.
-          - '**Sensorized gripper with in-hand tactile perception for scalable, damageless harvesting.**'
-          - Compact optical-mechanical design with an optimized optical path, accommodating a wide range of fruit sizes; ROS-based real-time pipeline for force estimation, slip detection, and softness prediction, validated in real-world cherry tomato harvesting.
-          - '**Vision-based proprioception and tactile sensing for soft robotics.**'
-          - Embedded-camera pipeline for proprioception and tactile sensing via photometric stereo and deep learning; 5.35 mm mean Chamfer distance for shape reconstruction (down from 8.85 mm) and sub-0.2 mm depth error for surface texture, with inference under 0.05 s.
-          - '**Haptic glove for VR-based social touch data collection.**'
-          - Designed and built a wearable haptic feedback glove for a VR-based platform used to capture whole-body social touch interaction between humans and robots.
-      - company: Intelligent Multimedia Lab, MSRA, Beijing, China
+          - '**Learning exploratory procedures for physical property perception.** Belief-conditioned reinforcement learning policy that sequences action primitives (pick, place, push, drag) to infer mass and friction from force/torque and depth sensing, using a forward model learned from simulated play and a particle belief. On 45 unseen objects, 45% lower mass loss and 30% lower friction loss than a classical routine with about a third of its unsafe events; deployed on a real UR5e arm without fine-tuning.'
+          - '**FruitTouch: sensorized gripper with in-hand tactile perception.** Compact optical design accommodating a wide range of fruit sizes; ROS-based real-time force estimation, slip detection, and softness prediction, validated in real-world cherry tomato harvesting.'
+          - '**PneuGelSight: vision-based proprioception and tactile sensing for soft robots.** Embedded-camera pipeline using photometric stereo and deep learning; 5.35 mm mean Chamfer distance for shape reconstruction (down from 8.85 mm), sub-0.2 mm depth error for surface texture, inference under 0.05 s.'
+          - '**Haptic glove for VR-based social touch data collection.** Designed and built a wearable haptic feedback glove for a VR platform capturing whole-body human-robot social touch.'
+      - company: Microsoft Research Asia (MSRA), Intelligent Multimedia Lab (director Chong Luo)
         position: ''
         start_date: 2022-09
         end_date: 2023-07
-        summary: 'Director: Chong Luo, Principal Researcher'
         highlights:
-          - '**Generative AI for video processing and object tracking.**'
-          - Developed a diffusion-model-based object tracking pipeline under heavy occlusion, reaching state of the art at the time; improved computational speed and memory usage for large-scale datasets.
-    Projects:
-      - name: Design and Innovation of a Quadrotor UAV
-        start_date: 2021-03
-        end_date: 2021-07
-        summary: 'Course project, EEIS, USTC; advised by Wei Lu'
-        highlights:
-          - Built a quadrotor from scratch achieving stable hovering within ±3 cm drift.
-          - Designed logic control circuits and power management systems, and optimized flight algorithms.
+          - '**Diffusion models for object tracking.** Developed a diffusion-model-based object tracking pipeline under heavy occlusion, reaching state of the art at the time; improved speed and memory usage on large-scale datasets.'
 
-    Honors and Awards:
-      - bullet: '**Guo Moruo Scholarship**, 2023 — highest honor for undergraduates at USTC (top 1%).'
-      - bullet: '**China National Scholarship**, 2021 and 2022.'
-      - bullet: '**USTC Talented Students Program Scholarship**, 2020, 2021, and 2022.'
+    Publications:
+      - bullet: '**Zhang, R.**, Yuan, W. "Learning Exploratory Procedures for Physical Property Perception," *In submission to RSS 2027*'
+      - bullet: '**Zhang, R.**, Mirzaee, M. A., Yuan, W. "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting," *IEEE RA-L, 2026* [[Webpage](https://fruittouch-dev.github.io/fruittouch/)]'
+      - bullet: 'Crowder, D., **Zhang, R.**, Block, A. E., Yuan, W. "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction," *IEEE/RSJ IROS, 2026* [[arXiv](https://arxiv.org/abs/2607.11690)]'
+      - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *IJRR, 2025* [[Webpage](https://ruohan-zhang.com/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'
 
     Technical Skills:
-      - label: Programming
-        details: Python, C++, C, MATLAB, LaTeX, embedded systems
-      - label: Robotics
-        details: ROS, MuJoCo, Isaac Lab, PyTorch
-      - label: Simulation & CAD
-        details: Blender, Abaqus, COMSOL, SOFA, SolidWorks, Onshape, Fusion 360, Altium Designer
-      - label: Languages
-        details: Chinese (native), English (professional working proficiency)
+      - label: Robot Learning
+        details: Reinforcement learning, sim-to-real transfer, particle-filter state estimation, point-cloud perception
+      - label: Software
+        details: Python, C++, PyTorch, ROS, Isaac Lab, MuJoCo, MATLAB
+      - label: Hardware
+        details: UR5e arm, WSG 50 gripper, force/torque sensors, depth cameras, vision-based tactile sensors
+      - label: Design & Simulation
+        details: SolidWorks, Onshape, Fusion 360, Blender; FEA with Abaqus, COMSOL, SOFA
+
+    Honors and Service:
+      - label: Honors
+        details: 'Guo Moruo Scholarship (highest undergraduate honor at USTC), 2023; China National Scholarship, 2021–22'
+      - label: Service
+        details: 'Reviewer for IJRR, RA-L, T-RL, ICRA, IROS; Teaching Assistant for ECE 205 and ECE 206, UIUC'
 
 design:
   theme: engineeringclassic
   page:
-    top_margin: 0.6in
-    bottom_margin: 0.55in
-    left_margin: 0.65in
-    right_margin: 0.65in
+    top_margin: 0.45in
+    bottom_margin: 0.4in
+    left_margin: 0.6in
+    right_margin: 0.6in
     show_top_note: false
     show_footer: false
   colors:
@@ -112,7 +95,7 @@ design:
     connections: rgb(0, 0, 0)
     links: rgb(255, 0, 0)
   typography:
-    line_spacing: 0.5em
+    line_spacing: 0.47em
     alignment: justified
     font_family:
       body: Charter
@@ -138,17 +121,17 @@ design:
   section_titles:
     type: with_full_line
     line_thickness: 0.5pt
-    space_above: 0.38cm
-    space_below: 0.22cm
+    space_above: 0.28cm
+    space_below: 0.18cm
   sections:
-    space_between_regular_entries: 0.9em
+    space_between_regular_entries: 0.7em
     space_between_text_based_entries: 0.2em
   entries:
     date_and_location_width: 3.6cm
     highlights:
       bullet: "-"
-      space_above: 0.12cm
-      space_between_items: 0.12cm
+      space_above: 0.1cm
+      space_between_items: 0.09cm
   templates:
     education_entry:
       main_column: |-
@@ -158,7 +141,6 @@ design:
     experience_entry:
       main_column: |-
         **COMPANY**
-        SUMMARY
         HIGHLIGHTS
       date_and_location_column: DATE
     normal_entry:
