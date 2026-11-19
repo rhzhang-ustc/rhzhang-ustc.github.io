@@ -13,16 +13,28 @@ var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
 
+// The visible list is a full-width flex row, so its own width never changes.
+// Measure the natural (unwrapped, unshrunk) width of its items instead.
+function linksWidth() {
+  var total = 0;
+  $vlinks.addClass('measuring');
+  $vlinks.children().each(function () {
+    total += $(this).outerWidth();
+  });
+  $vlinks.removeClass('measuring');
+  return total;
+}
+
 function updateNav() {
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
+  if (linksWidth() > availableSpace) {
 
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
+    while (linksWidth() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
       // Record the width of the list
-      breaks.push($vlinks.width());
+      breaks.push(linksWidth());
 
       // Move item to the hidden list
       $vlinks.children("*:not(.persist)").last().prependTo($hlinks);

@@ -204,6 +204,21 @@
     z-index: 100;
   }
 
+  /* The menu button is absolutely positioned; while it is showing, keep the
+     last item (the language switch) clear of it. */
+  button:not(.hidden) ~ .visible-links #lang-toggle {
+    margin-right: 2.75rem;
+  }
+
+  /* Set briefly by the collapsing-menu script while it measures how wide the
+     items would be without wrapping or shrinking. */
+  .visible-links.measuring > li {
+    flex: none !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+    text-wrap: nowrap !important;
+  }
+
   .visible-links {
     display: flex;
     flex-wrap: nowrap;
@@ -228,15 +243,6 @@
         a {
           margin-right: 0;
         }
-      }
-    }
-
-    #theme-toggle {
-      a {
-        width: 25px;
-        display: flex;
-        justify-content: center;
-        cursor: pointer;
       }
     }
 
