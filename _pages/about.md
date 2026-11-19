@@ -24,6 +24,21 @@ My research lies at the intersection of **robot perception, tactile sensing, and
 
 ## Publications
 
+<h3 class="pub-group">Under Review</h3>
+
+<div class="pub-list">
+
+<div class="pub-item pub-item--media">
+  <div class="pub-thumb"><img src="/images/active_perception_thumbnail-simulated.png" alt="A robot probes a can, estimates its mass and friction, and uses the estimate" loading="lazy"></div>
+  <div class="pub-body">
+    <h3 class="pub-title">Learning Exploratory Procedures for Physical Property Perception</h3>
+    <p class="pub-authors"><span class="pub-me">Ruohan Zhang</span>, Wenzhen Yuan</p>
+    <p class="pub-venue">In submission to Robotics: Science and Systems (RSS), 2027</p>
+  </div>
+</div>
+
+</div>
+
 <h3 class="pub-group">Journal Articles</h3>
 
 <div class="pub-list">

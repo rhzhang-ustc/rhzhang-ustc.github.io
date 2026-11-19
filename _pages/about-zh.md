@@ -22,6 +22,21 @@ title: ""
 
 ## 学术论文
 
+<h3 class="pub-group">在投论文</h3>
+
+<div class="pub-list">
+
+<div class="pub-item pub-item--media">
+  <div class="pub-thumb"><img src="/images/active_perception_thumbnail-simulated.png" alt="A robot probes a can, estimates its mass and friction, and uses the estimate" loading="lazy"></div>
+  <div class="pub-body">
+    <h3 class="pub-title">Learning Exploratory Procedures for Physical Property Perception</h3>
+    <p class="pub-authors"><span class="pub-me">Ruohan Zhang</span>, Wenzhen Yuan</p>
+    <p class="pub-venue">在投：Robotics: Science and Systems (RSS), 2027</p>
+  </div>
+</div>
+
+</div>
+
 <h3 class="pub-group">期刊论文</h3>
 
 <div class="pub-list">
