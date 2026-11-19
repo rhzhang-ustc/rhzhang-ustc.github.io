@@ -46,7 +46,7 @@ cv:
         start_date: 2023-09
         end_date: present
         highlights:
-          - '**Learning exploratory procedures for physical property perception.** Belief-conditioned reinforcement learning policy that sequences action primitives (pick, place, push, drag) to infer mass and friction from force/torque and depth sensing, using a forward model learned from simulated play and a particle belief. On 45 unseen objects, 45% lower mass loss and 30% lower friction loss than a classical routine with about a third of its unsafe events; deployed on a real UR5e arm without fine-tuning.'
+          - '**Learning exploratory procedures for active physical perception.** Belief-conditioned reinforcement learning policy that sequences action primitives (pick, place, push, drag) to infer mass and friction from force/torque and depth sensing, using a forward model learned from simulated play and a particle belief; trained without real-world data and accurate on objects too heavy to lift. On 45 unseen objects, 45% lower mass loss and 30% lower friction loss than a classical routine with about a third of its unsafe actions; deployed on a real UR5e arm without fine-tuning.'
           - '**FruitTouch: sensorized gripper with in-hand tactile perception.** Compact optical design accommodating a wide range of fruit sizes; ROS-based real-time force estimation, slip detection, and softness prediction, validated in real-world cherry tomato harvesting.'
           - '**PneuGelSight: vision-based proprioception and tactile sensing for soft robots.** Embedded-camera pipeline using photometric stereo and deep learning; 5.35 mm mean Chamfer distance for shape reconstruction (down from 8.85 mm), sub-0.2 mm depth error for surface texture, inference under 0.05 s.'
           - '**Haptic glove for VR-based social touch data collection.** Designed and built a wearable haptic feedback glove for a VR platform capturing whole-body human-robot social touch.'
@@ -58,7 +58,7 @@ cv:
           - '**Diffusion models for object tracking.** Developed a diffusion-model-based object tracking pipeline under heavy occlusion, reaching state of the art at the time; improved speed and memory usage on large-scale datasets.'
 
     Publications:
-      - bullet: '**Zhang, R.**, Yuan, W. "Learning Exploratory Procedures for Physical Property Perception," *In submission to RSS 2027*'
+      - bullet: '**Zhang, R.**, Yuan, W. "Learning Exploratory Procedures for Active Physical Perception," *In submission to RSS 2027*'
       - bullet: '**Zhang, R.**, Mirzaee, M. A., Yuan, W. "FruitTouch: A Perceptive Gripper for Gentle and Scalable Fruit Harvesting," *IEEE RA-L, 2026* [[Webpage](https://fruittouch-dev.github.io/fruittouch/)]'
       - bullet: 'Crowder, D., **Zhang, R.**, Block, A. E., Yuan, W. "Requirement-Driven Design of Whole-Body Social Tactile Sensing via Virtual Human-Robot Interaction," *IEEE/RSJ IROS, 2026* [[arXiv](https://arxiv.org/abs/2607.11690)]'
       - bullet: '**Zhang, R.**, Yoo, U., Li, Y., Agarwal, A., Yuan, W. "PneuGelSight: Soft Robotic Vision-Based Proprioception and Tactile Sensing," *IJRR, 2025* [[Webpage](https://ruohan-zhang.com/PneuGelSight-project/), [arXiv](https://arxiv.org/abs/2508.18443)]'

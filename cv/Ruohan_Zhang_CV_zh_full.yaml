@@ -63,9 +63,9 @@ cv:
         end_date: present
         summary: '导师：Wenzhen Yuan'
         research_details: |-
-          **学习探索性动作以感知物理属性**
+          **学习探索性动作以实现主动物理感知**
 
-          提出基于信念的强化学习策略，自主选择抓取、放置、推动、拖拽等动作基元，利用腕部力/力矩与深度信息推断物体的质量与摩擦系数。在 45 个未见物体上，质量与摩擦估计误差较经典方法分别降低 45% 和 30%，不安全事件约为其三分之一，并无需微调部署到 UR5e 实体机器人。相关论文：RSS 2027 在投，第一作者。
+          提出基于信念的强化学习策略，自主选择抓取、放置、推动、拖拽等动作基元，利用腕部力/力矩与深度信息推断物体的质量与摩擦系数。在 45 个未见物体上，质量与摩擦估计误差较经典方法分别降低 45% 和 30%，不安全动作比例约为其三分之一，并无需微调部署到 UR5e 实体机器人。相关论文：RSS 2027 在投，第一作者。
 
           #v(0.28cm)
           **人机触觉交互数据采集**
@@ -82,7 +82,7 @@ cv:
           开发严重遮挡条件下的扩散模型目标跟踪方法，并针对大规模数据集优化计算效率与内存占用。
 
     代表论文:
-      - title: Learning Exploratory Procedures for Physical Property Perception
+      - title: Learning Exploratory Procedures for Active Physical Perception
         authors: ['**Zhang, R.**', 'Yuan, W.']
         journal: 'Robotics: Science and Systems (RSS)'
         short_venue: RSS（在投）
